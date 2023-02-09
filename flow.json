@@ -1,1 +1,7347 @@
-[]
+[
+    {
+        "id": "6cbcab6b6e8dfac4",
+        "type": "tab",
+        "label": "DMX",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "d14afb85a501d2ce",
+        "type": "tab",
+        "label": "DMX Patch Pannel",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "bebc4b1c88ed43b8",
+        "type": "tab",
+        "label": "Convert.txt2Workable",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6c68a78c20904912",
+        "type": "tab",
+        "label": "RXOnePreset",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b5fe148f37a3abb4",
+        "type": "tab",
+        "label": "RX ONE DMX Sheet for Mapping",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2f0b5dcab7a2573d",
+        "type": "Art-Net Controller",
+        "name": "",
+        "bind": "2.0.0.2",
+        "port": "6454",
+        "sname": "dmxnet",
+        "lname": "dmxnet - Node-Red",
+        "oemcode": "0x2908",
+        "estacode": "0x0000",
+        "loglevel": "warn"
+    },
+    {
+        "id": "8a2c1dde324bbaba",
+        "type": "Art-Net Sender",
+        "name": "",
+        "artnetcontroller": "2f0b5dcab7a2573d",
+        "address": "2.0.0.1",
+        "port": "6454",
+        "net": "0",
+        "subnet": "0",
+        "universe": "1",
+        "maxrate": "10",
+        "refresh": "1000",
+        "savevalues": true
+    },
+    {
+        "id": "03f36b3abd31a6e4",
+        "type": "ui_tab",
+        "name": "DMX Shortcuts",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "b0bdd901ad5e86be",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD.MM.YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "961680a5121633de",
+        "type": "ui_group",
+        "name": "Send DMX ",
+        "tab": "03f36b3abd31a6e4",
+        "order": 1,
+        "disp": true,
+        "width": "25",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ee40c93ce12b8c81",
+        "type": "ui_tab",
+        "name": "Patch-Pannel",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4fe9fbc79941bf91",
+        "type": "ui_group",
+        "name": "Patch Pannel",
+        "tab": "ee40c93ce12b8c81",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "73538e7f361c6059",
+        "type": "ui_tab",
+        "name": "DMX Table",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "9d814080950d3a1e",
+        "type": "ui_group",
+        "name": "DMX Table",
+        "tab": "73538e7f361c6059",
+        "order": 1,
+        "disp": true,
+        "width": 25,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2899c39b7d332a13",
+        "type": "Art-Net Sender",
+        "name": "",
+        "artnetcontroller": "2f0b5dcab7a2573d",
+        "address": "2.0.0.1",
+        "port": "6454",
+        "net": "0",
+        "subnet": "0",
+        "universe": "2",
+        "maxrate": "10",
+        "refresh": "1000",
+        "savevalues": true
+    },
+    {
+        "id": "87948d9eda6d297a",
+        "type": "ui_group",
+        "name": "Send DMX Tables",
+        "tab": "bf73c350ca02ee2e",
+        "order": 2,
+        "disp": true,
+        "width": 15,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bf73c350ca02ee2e",
+        "type": "ui_tab",
+        "name": "Send DMX Tables",
+        "icon": "dashboard",
+        "order": 6,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "e51339d339b6c88e",
+        "type": "ui_group",
+        "name": "DMX Values",
+        "tab": "03f36b3abd31a6e4",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fd6c4b39108521db",
+        "type": "ui_spacer",
+        "z": "d14afb85a501d2ce",
+        "name": "spacer",
+        "group": "961680a5121633de",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fddab3a5e375a660",
+        "type": "ui_spacer",
+        "z": "d14afb85a501d2ce",
+        "name": "spacer",
+        "group": "961680a5121633de",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9bf0e3912d750e24",
+        "type": "ui_spacer",
+        "z": "d14afb85a501d2ce",
+        "name": "spacer",
+        "group": "961680a5121633de",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e0454f2c756d45fe",
+        "type": "ui_spacer",
+        "z": "d14afb85a501d2ce",
+        "name": "spacer",
+        "group": "961680a5121633de",
+        "order": 10,
+        "width": 25,
+        "height": 1
+    },
+    {
+        "id": "d7c3ea921de8b7a9",
+        "type": "ui_spacer",
+        "z": "d14afb85a501d2ce",
+        "name": "spacer",
+        "group": "961680a5121633de",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d5bebf2bdce4a0f0",
+        "type": "ui_spacer",
+        "z": "d14afb85a501d2ce",
+        "name": "spacer",
+        "group": "961680a5121633de",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "40842404215b30f2",
+        "type": "ui_spacer",
+        "z": "d14afb85a501d2ce",
+        "name": "spacer",
+        "group": "961680a5121633de",
+        "order": 18,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9fd572b68e7ee6ca",
+        "type": "ui_spacer",
+        "z": "d14afb85a501d2ce",
+        "name": "spacer",
+        "group": "87948d9eda6d297a",
+        "order": 1,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "3ecb4e30e80adde6",
+        "type": "ui_spacer",
+        "z": "d14afb85a501d2ce",
+        "name": "spacer",
+        "group": "87948d9eda6d297a",
+        "order": 3,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "1c7a7db3efef751f",
+        "type": "ui_spacer",
+        "z": "d14afb85a501d2ce",
+        "name": "spacer",
+        "group": "87948d9eda6d297a",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5e1e04f815790b5f",
+        "type": "ui_group",
+        "name": "Patch Pannel Vergebene DMX Adr.",
+        "tab": "ee40c93ce12b8c81",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "57d9a3a1537b42d0",
+        "type": "ui_tab",
+        "name": "RXOne Preset",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "efafaa58c1ff9c9d",
+        "type": "ui_group",
+        "name": "RXOne Preset",
+        "tab": "57d9a3a1537b42d0",
+        "order": 1,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "08c9effcaff376f3",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 2,
+        "width": 25,
+        "height": 1
+    },
+    {
+        "id": "3b562b3cf8f69b26",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 5,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "54efac6961ad15aa",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 7,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "cfed1bcdbe5913bd",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 8,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "3950933fa74b7f12",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 9,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "b1e0482f3751b5bc",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 10,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "14e1ef0c47aaa797",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 11,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "24e16153b218bd85",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 12,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "4d16710959ed90bb",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 13,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "6830e152f8268ae4",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 14,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "da28171e1fc8b289",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 15,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "52670338c82b575e",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 16,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "7ce32146be445578",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 17,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "c97f188ff2fd7269",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 18,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "5377a809d133ba3b",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 19,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "7277ea8f1dfe6462",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 20,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "a1cf6fdc84d3a5a1",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 21,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "bb3d1cbc0fbb231b",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 22,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "7374640ab856a196",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 23,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "9e47308dc08f0651",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 24,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "465017295e36e1e8",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 25,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "33e2af0e123bf335",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 26,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "75fef7669209cc70",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 27,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "47ae96f30a0a17dd",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 28,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "e82aba9d954efb52",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 29,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "2d692fdd4a6a3110",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 30,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "62d730db83b0c281",
+        "type": "ui_spacer",
+        "z": "bebc4b1c88ed43b8",
+        "name": "spacer",
+        "group": "9d814080950d3a1e",
+        "order": 31,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "fafe6dc64d7186a5",
+        "type": "ui_group",
+        "name": "SetFixValue",
+        "tab": "57d9a3a1537b42d0",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "52181075881cfc86",
+        "type": "ui_tab",
+        "name": "RX ONE DMX Sheet",
+        "icon": "lightbulb_outline",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bf17ca07e1801cce",
+        "type": "ui_group",
+        "name": "Slider",
+        "tab": "52181075881cfc86",
+        "order": 1,
+        "disp": true,
+        "width": 10,
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "6917381f83b855ca",
+        "type": "ui_group",
+        "name": "Color Buttons",
+        "tab": "52181075881cfc86",
+        "order": 4,
+        "disp": true,
+        "width": 10,
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "7b0aa8352f02ad82",
+        "type": "ui_group",
+        "name": "Gobo Buttons",
+        "tab": "52181075881cfc86",
+        "order": 5,
+        "disp": true,
+        "width": "10",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "b2cd242c6276473b",
+        "type": "ui_spacer",
+        "z": "b5fe148f37a3abb4",
+        "name": "spacer",
+        "group": "bf17ca07e1801cce",
+        "order": 5,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "1c260ddef5f84c5e",
+        "type": "Art-Net Out",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "Uni1",
+        "artnetsender": "8a2c1dde324bbaba",
+        "ignoreaddress": false,
+        "x": 1110,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "d61095b619aacab6",
+        "type": "ui_form",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "",
+        "label": "Send DMX Values Tab 1",
+        "group": "87948d9eda6d297a",
+        "order": 4,
+        "width": 7,
+        "height": 1,
+        "options": [
+            {
+                "label": "DMX Channel 1",
+                "value": "channel1",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "DMX Value 1",
+                "value": "value1",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "DMX Channel 2",
+                "value": "channel2",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "DMX Value 2",
+                "value": "value2",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "DMX Channel 3",
+                "value": "channel3",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "DMX Value 3",
+                "value": "value3",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "DMX Channel 4",
+                "value": "channel4",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "DMX Value 4",
+                "value": "value4",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "DMX Channel 5",
+                "value": "channel5",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "DMX Value 5",
+                "value": "value5",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Universum",
+                "value": "universe",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "channel1": "",
+            "value1": "",
+            "channel2": "",
+            "value2": "",
+            "channel3": "",
+            "value3": "",
+            "channel4": "",
+            "value4": "",
+            "channel5": "",
+            "value5": "",
+            "universe": ""
+        },
+        "payload": "",
+        "submit": "DMX Send",
+        "cancel": "Abbrechen",
+        "topic": "payload",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 230,
+        "y": 220,
+        "wires": [
+            [
+                "ce400306caea25cc"
+            ]
+        ]
+    },
+    {
+        "id": "ce400306caea25cc",
+        "type": "function",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "function 3",
+        "func": "msg.payload = {\n    universe: msg.payload.universe,\n    \"buckets\": [\n        { universe: msg.payload.universe },\n        { channel: msg.payload.channel1, value: msg.payload.value1 },\n        { channel: msg.payload.channel2, value: msg.payload.value2 },\n        { channel: msg.payload.channel3, value: msg.payload.value3 },\n        { channel: msg.payload.channel4, value: msg.payload.value4 },\n        { channel: msg.payload.channel5, value: msg.payload.value5 }\n    ]\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 220,
+        "wires": [
+            [
+                "b4c44350f1c6a2f1"
+            ]
+        ]
+    },
+    {
+        "id": "f2a212404b2cc568",
+        "type": "ui_form",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "",
+        "label": "Send DMX Values Tab 2",
+        "group": "87948d9eda6d297a",
+        "order": 6,
+        "width": 7,
+        "height": 1,
+        "options": [
+            {
+                "label": "DMX Channel 6",
+                "value": "channel6",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "DMX Value 6",
+                "value": "value6",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "DMX Channel 7",
+                "value": "channel7",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "DMX Value 7",
+                "value": "value7",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "DMX Channel 8",
+                "value": "channel8",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "DMX Value 8",
+                "value": "value8",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "DMX Channel 9",
+                "value": "channel9",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "DMX Value 9",
+                "value": "value9",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "DMX Channel 10",
+                "value": "channel10",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "DMX Value 10",
+                "value": "value10",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Universum",
+                "value": "universe",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "channel6": "",
+            "value6": "",
+            "channel7": "",
+            "value7": "",
+            "channel8": "",
+            "value8": "",
+            "channel9": "",
+            "value9": "",
+            "channel10": "",
+            "value10": "",
+            "universe": ""
+        },
+        "payload": "",
+        "submit": "DMX Send",
+        "cancel": "Abbrechen",
+        "topic": "payload",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 230,
+        "y": 260,
+        "wires": [
+            [
+                "664aa8a4c89e15ab"
+            ]
+        ]
+    },
+    {
+        "id": "664aa8a4c89e15ab",
+        "type": "function",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "function 4",
+        "func": "msg.payload = {\n    universe: msg.payload.universe,\n    \"buckets\": [\n        {universe: msg.payload.universe},\n        { channel: msg.payload.channel6, value: msg.payload.value6 },\n        { channel: msg.payload.channel7, value: msg.payload.value7 },\n        { channel: msg.payload.channel8, value: msg.payload.value8 },\n        { channel: msg.payload.channel9, value: msg.payload.value9 },\n        { channel: msg.payload.channel10, value: msg.payload.value10 }\n    ]\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 260,
+        "wires": [
+            [
+                "b4c44350f1c6a2f1"
+            ]
+        ]
+    },
+    {
+        "id": "37c59c57042cf99c",
+        "type": "ui_form",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "Send DMX Values + duration",
+        "label": "",
+        "group": "87948d9eda6d297a",
+        "order": 2,
+        "width": 7,
+        "height": 1,
+        "options": [
+            {
+                "label": "DMX Kanal",
+                "value": "channel",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "DMX Wert",
+                "value": "value",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "dauer (ms)",
+                "value": "duration",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Universum",
+                "value": "universe",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "channel": "",
+            "value": "",
+            "duration": "",
+            "universe": ""
+        },
+        "payload": "",
+        "submit": "Send DMX",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 240,
+        "y": 300,
+        "wires": [
+            [
+                "27a1c46801a1fd74"
+            ]
+        ]
+    },
+    {
+        "id": "27a1c46801a1fd74",
+        "type": "function",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "function 7",
+        "func": "msg.payload = {\n    universe: msg.payload.universe,\n    \"transition\": \"linear\",\n    duration: msg.payload.duration,\n    \"repeat\": 1,\n    \"gap\": 1000,\n    \"buckets\": [\n        { channel: msg.payload.channel, value: msg.payload.value }\n    ]\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 300,
+        "wires": [
+            [
+                "b4c44350f1c6a2f1"
+            ]
+        ]
+    },
+    {
+        "id": "ee564efe5ecece91",
+        "type": "Art-Net Out",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "Uni2",
+        "artnetsender": "2899c39b7d332a13",
+        "ignoreaddress": false,
+        "x": 1110,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "b4c44350f1c6a2f1",
+        "type": "switch",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "",
+        "property": "payload.universe",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 630,
+        "y": 260,
+        "wires": [
+            [
+                "1c260ddef5f84c5e"
+            ],
+            [
+                "ee564efe5ecece91"
+            ]
+        ]
+    },
+    {
+        "id": "4ce51a91616dc0bf",
+        "type": "ui_slider",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "",
+        "label": "Pan",
+        "tooltip": "",
+        "group": "961680a5121633de",
+        "order": 7,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "outs": "all",
+        "topic": "panValue",
+        "topicType": "msg",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "className": "",
+        "x": 250,
+        "y": 520,
+        "wires": [
+            [
+                "630f65008ec4038b"
+            ]
+        ]
+    },
+    {
+        "id": "4bb10eb2dd2054f6",
+        "type": "ui_slider",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "",
+        "label": "Tilt",
+        "tooltip": "",
+        "group": "961680a5121633de",
+        "order": 9,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "className": "",
+        "x": 230,
+        "y": 740,
+        "wires": [
+            [
+                "2bfdd1efc456423a"
+            ]
+        ]
+    },
+    {
+        "id": "4627f36d554be1b7",
+        "type": "ui_text_input",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "",
+        "label": "Set DMX Value for Pan",
+        "tooltip": "",
+        "group": "961680a5121633de",
+        "order": 4,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "dmxValue",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 190,
+        "y": 480,
+        "wires": [
+            [
+                "7d9e6f6f8eee05f5"
+            ]
+        ]
+    },
+    {
+        "id": "86dd41f6411b3c1f",
+        "type": "ui_text_input",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "",
+        "label": "Set DMX Value for Tilt",
+        "tooltip": "",
+        "group": "961680a5121633de",
+        "order": 6,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 180,
+        "y": 700,
+        "wires": [
+            [
+                "217812491e7fc1cb"
+            ]
+        ]
+    },
+    {
+        "id": "97cbccf542de6fdc",
+        "type": "ui_text_input",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "",
+        "label": "Set Universe for Pan",
+        "tooltip": "",
+        "group": "961680a5121633de",
+        "order": 1,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "payload.universe",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 200,
+        "y": 440,
+        "wires": [
+            [
+                "9cee2125b1cce6fe"
+            ]
+        ]
+    },
+    {
+        "id": "d1bc17e11a884432",
+        "type": "ui_text_input",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "",
+        "label": "Set Universe for Tilt",
+        "tooltip": "",
+        "group": "961680a5121633de",
+        "order": 3,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "dmxValue",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 190,
+        "y": 660,
+        "wires": [
+            [
+                "e7add651f2190e3a"
+            ]
+        ]
+    },
+    {
+        "id": "7d9e6f6f8eee05f5",
+        "type": "function",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "flow.set dmxValuePan",
+        "func": "flow.set(\"dmxValuePan\", msg.payload )",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9cee2125b1cce6fe",
+        "type": "function",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "flow.set universePan",
+        "func": "flow.set(\"universePan\", msg.payload )",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "630f65008ec4038b",
+        "type": "function",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "combine flow.set + payload",
+        "func": "msg.payload = {\n    universe: flow.get(\"universePan\"),\n    \"transition\": \"linear\",\n    \"duration\": 200,\n    \"repeat\": 1,\n    \"gap\": 1000,\n    \"buckets\": [\n        { channel: flow.get(\"dmxValuePan\"), value: msg.payload }\n    ]\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 520,
+        "wires": [
+            [
+                "b6564c144677d3cc"
+            ]
+        ]
+    },
+    {
+        "id": "217812491e7fc1cb",
+        "type": "function",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "flow.set dmxValuePan",
+        "func": "flow.set(\"dmxValueTilt\", msg.payload )",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e7add651f2190e3a",
+        "type": "function",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "flow.set universePan",
+        "func": "flow.set(\"universeTilt\", msg.payload )",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2bfdd1efc456423a",
+        "type": "function",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "combine flow.set + payload",
+        "func": "msg.payload = {\n    universe: flow.get(\"universeTilt\"),\n    \"transition\": \"linear\",\n    \"duration\": 200,\n    \"repeat\": 1,\n    \"gap\": 1000,\n    \"buckets\": [\n        { channel: flow.get(\"dmxValueTilt\"), value: msg.payload }\n    ]\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 740,
+        "wires": [
+            [
+                "b6564c144677d3cc"
+            ]
+        ]
+    },
+    {
+        "id": "b6564c144677d3cc",
+        "type": "switch",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "",
+        "property": "payload.universe",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 890,
+        "y": 600,
+        "wires": [
+            [
+                "1c260ddef5f84c5e"
+            ],
+            [
+                "ee564efe5ecece91"
+            ]
+        ]
+    },
+    {
+        "id": "1726d43340eb4f54",
+        "type": "ui_slider",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "",
+        "label": "Dimmer",
+        "tooltip": "",
+        "group": "961680a5121633de",
+        "order": 17,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "className": "",
+        "x": 260,
+        "y": 960,
+        "wires": [
+            [
+                "edf614320fc5e3aa"
+            ]
+        ]
+    },
+    {
+        "id": "242400998d375bef",
+        "type": "ui_text_input",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "",
+        "label": "Set DMX Value for Dimmer",
+        "tooltip": "",
+        "group": "961680a5121633de",
+        "order": 14,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 200,
+        "y": 920,
+        "wires": [
+            [
+                "77fc7f81a994578c"
+            ]
+        ]
+    },
+    {
+        "id": "3b2a0b8a975fd8e5",
+        "type": "ui_text_input",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "",
+        "label": "Set Universe for Dimmer",
+        "tooltip": "",
+        "group": "961680a5121633de",
+        "order": 11,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "dmxValue",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 210,
+        "y": 880,
+        "wires": [
+            [
+                "7f1add5f9b9946e2"
+            ]
+        ]
+    },
+    {
+        "id": "77fc7f81a994578c",
+        "type": "function",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "flow.set dmxValuePan",
+        "func": "flow.set(\"dmxValueDimmer\", msg.payload )",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f1add5f9b9946e2",
+        "type": "function",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "flow.set universePan",
+        "func": "flow.set(\"universeDimmer\", msg.payload )",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "edf614320fc5e3aa",
+        "type": "function",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "combine flow.set + payload",
+        "func": "msg.payload = {\n    universe: flow.get(\"universeDimmer\"),\n    \"transition\": \"linear\",\n    \"duration\": 200,\n    \"repeat\": 1,\n    \"gap\": 1000,\n    \"buckets\": [\n        { channel: flow.get(\"dmxValueDimmer\"), value: msg.payload }\n    ]\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 960,
+        "wires": [
+            [
+                "b6564c144677d3cc"
+            ]
+        ]
+    },
+    {
+        "id": "122e3c16a74b5efa",
+        "type": "ui_slider",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "",
+        "label": "ColorWheel",
+        "tooltip": "",
+        "group": "961680a5121633de",
+        "order": 19,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "className": "",
+        "x": 270,
+        "y": 1180,
+        "wires": [
+            [
+                "c3fb152f77dbeb9b"
+            ]
+        ]
+    },
+    {
+        "id": "2f4af33dcb2cdd80",
+        "type": "ui_text_input",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "",
+        "label": "Set DMX Value for ColorWheel",
+        "tooltip": "",
+        "group": "961680a5121633de",
+        "order": 16,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 210,
+        "y": 1140,
+        "wires": [
+            [
+                "7009089fe393c369"
+            ]
+        ]
+    },
+    {
+        "id": "f79f72c93c967c32",
+        "type": "ui_text_input",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "",
+        "label": "Set Universe for ColorWheel",
+        "tooltip": "",
+        "group": "961680a5121633de",
+        "order": 13,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "dmxValue",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 220,
+        "y": 1100,
+        "wires": [
+            [
+                "8562282efa65ac45"
+            ]
+        ]
+    },
+    {
+        "id": "7009089fe393c369",
+        "type": "function",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "flow.set dmxValuePan",
+        "func": "flow.set(\"dmxValueColorWheel\", msg.payload )",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8562282efa65ac45",
+        "type": "function",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "flow.set universePan",
+        "func": "flow.set(\"universeColorWheel\", msg.payload )",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c3fb152f77dbeb9b",
+        "type": "function",
+        "z": "6cbcab6b6e8dfac4",
+        "name": "combine flow.set + payload",
+        "func": "msg.payload = {\n    universe: flow.get(\"universeColorWheel\"),\n    \"transition\": \"linear\",\n    \"duration\": 200,\n    \"repeat\": 1,\n    \"gap\": 1000,\n    \"buckets\": [\n        { channel: flow.get(\"dmxValueColorWheel\"), value: msg.payload }\n    ]\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 1180,
+        "wires": [
+            [
+                "b6564c144677d3cc"
+            ]
+        ]
+    },
+    {
+        "id": "42a23e599c0b6744",
+        "type": "comment",
+        "z": "d14afb85a501d2ce",
+        "name": "LampName,LampeNr,Universe,HochlaufendeNummerAb0AbNeueLampe,DMXAdresseStart",
+        "info": "Lege 5 Lampen an\nin Universum 2\nStarte bei Adresse 9\npro Lampe 17 Adressen",
+        "x": 330,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "db18cfd4b30997fb",
+        "type": "ui_form",
+        "z": "d14afb85a501d2ce",
+        "name": "",
+        "label": "",
+        "group": "4fe9fbc79941bf91",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "options": [
+            {
+                "label": "Name der Lampe",
+                "value": "Name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Anzahl",
+                "value": "Anzahl",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Universum",
+                "value": "Universum",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "DMX Start Adresse",
+                "value": "DMXStartAdr",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "DMX Channel Mode",
+                "value": "DMXChannelMode",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Name": "",
+            "Anzahl": "",
+            "Universum": "",
+            "DMXStartAdr": "",
+            "DMXChannelMode": ""
+        },
+        "payload": "",
+        "submit": "Patch",
+        "cancel": "Abbrechen",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 350,
+        "y": 200,
+        "wires": [
+            [
+                "bd6fd5b0c8cb3099"
+            ]
+        ]
+    },
+    {
+        "id": "26c3d6c4f8fa09bb",
+        "type": "comment",
+        "z": "d14afb85a501d2ce",
+        "name": "5@2-9/17",
+        "info": "Lege 5 Lampen an\nin Universum 2\nStarte bei Adresse 9\npro Lampe 17 Adressen",
+        "x": 80,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "bd6fd5b0c8cb3099",
+        "type": "function",
+        "z": "d14afb85a501d2ce",
+        "name": "create DMX Data",
+        "func": "let arrayLampOuter = []\nconst {payload} = msg \nfor (let index = 1; index <= payload.Anzahl; index++) {\n\n    arrayLampOuter.push({ filename: \"C:,Users,marvi,.node-red,DMXPlaene,\" + payload.Name + \"-\" + payload.Universum + \"-\" + payload.DMXStartAdr + \".txt\",name: payload.Name, lampeNr: index, universum: payload.Universum})\n}\n\nlet StartIndex = payload.DMXStartAdr || 0;\nlet EndIndex = payload.DMXStartAdr ? payload.DMXStartAdr + payload.DMXChannelMode : payload.DMXChannelMode;\nlet ActualDMXAdress = 1;\n\narrayLampOuter = arrayLampOuter.map((lamp) => {\n    let innerArr = []\n    for (let index = StartIndex; index < EndIndex; index++) {\n        //innerArr.push(ActualDMXAdress + \" -\" + index)\n        innerArr.push({ dmxSheetChannel: ActualDMXAdress, channel: index, value: 0})\n        ActualDMXAdress += 1;\n    }\n    ActualDMXAdress = 1;\n    lamp.DMXChannelMode = innerArr\n    StartIndex = EndIndex\n    EndIndex = StartIndex + payload.DMXChannelMode \n    return lamp\n})\n\nmsg.payload = arrayLampOuter;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 200,
+        "wires": [
+            [
+                "318149d45286b709"
+            ]
+        ]
+    },
+    {
+        "id": "963f3a90c6fbd5e8",
+        "type": "file",
+        "z": "d14afb85a501d2ce",
+        "name": "DMXPlan",
+        "filename": "payload[0].filename",
+        "filenameType": "msg",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 880,
+        "y": 200,
+        "wires": [
+            [
+                "af383e56a1cf93d8"
+            ]
+        ]
+    },
+    {
+        "id": "af383e56a1cf93d8",
+        "type": "debug",
+        "z": "d14afb85a501d2ce",
+        "name": "debug 14",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "318149d45286b709",
+        "type": "function",
+        "z": "d14afb85a501d2ce",
+        "name": "name DMX data.txt",
+        "func": "var text = msg.payload[0].filename;\nmsg.payload[0].filename = text.replaceAll(',','/');\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 200,
+        "wires": [
+            [
+                "963f3a90c6fbd5e8"
+            ]
+        ]
+    },
+    {
+        "id": "53f535a73ce2ed2c",
+        "type": "file in",
+        "z": "bebc4b1c88ed43b8",
+        "name": "",
+        "filename": "C:\\Users\\marvi\\.node-red\\DMXPlaene\\rxone-1-1.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 370,
+        "y": 40,
+        "wires": [
+            [
+                "1fa450beb017083d"
+            ]
+        ]
+    },
+    {
+        "id": "bac3a9c1721d50af",
+        "type": "inject",
+        "z": "bebc4b1c88ed43b8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 40,
+        "wires": [
+            [
+                "53f535a73ce2ed2c"
+            ]
+        ]
+    },
+    {
+        "id": "1fa450beb017083d",
+        "type": "json",
+        "z": "bebc4b1c88ed43b8",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 630,
+        "y": 40,
+        "wires": [
+            [
+                "0b81e95c2a26e29b"
+            ]
+        ]
+    },
+    {
+        "id": "0b81e95c2a26e29b",
+        "type": "function",
+        "z": "bebc4b1c88ed43b8",
+        "name": "function 5",
+        "func": "let dmxString=\"\";\nlet arr = [];\nconst { payload } = msg \nfor (let index = 0; index < payload.length; index++) {\n    //arr.push({name: payload.Name})\n    dmxString += \"\\n\" + payload[index].name + \" Nr.\" + payload[index].lampeNr + \",\"\n                    + \"\\n\"\n                    + \"uni: \" + payload[index].universum + \",\" + \"\\n\"\n\nfor (let index1 = 0; index1 < payload[index].DMXChannelMode.length; index1++) {\n    dmxString += payload[index].DMXChannelMode[index1] + \",\" + \"\\n\"\n}\n}\n\n//msg.payload = arr;\nmsg.payload = dmxString;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 40,
+        "wires": [
+            [
+                "ce46e7cb3023f248",
+                "4d1bf3350f3cc649",
+                "97c232ed0662acdd"
+            ]
+        ]
+    },
+    {
+        "id": "ce46e7cb3023f248",
+        "type": "debug",
+        "z": "bebc4b1c88ed43b8",
+        "name": "debug 12",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "4d1bf3350f3cc649",
+        "type": "file",
+        "z": "bebc4b1c88ed43b8",
+        "name": "",
+        "filename": "C:\\Users\\marvi\\.node-red\\DMXPlaene\\DMXPlanConverted.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1100,
+        "y": 80,
+        "wires": [
+            [
+                "55ae2bcea6b49b2f"
+            ]
+        ]
+    },
+    {
+        "id": "97c232ed0662acdd",
+        "type": "csv",
+        "z": "bebc4b1c88ed43b8",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 930,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "76d2c593f2339712",
+        "type": "debug",
+        "z": "bebc4b1c88ed43b8",
+        "name": "debug 15",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "55ae2bcea6b49b2f",
+        "type": "ui_text",
+        "z": "bebc4b1c88ed43b8",
+        "group": "9d814080950d3a1e",
+        "order": 3,
+        "width": 4,
+        "height": 26,
+        "name": "",
+        "label": "DMX Werte",
+        "format": "<pre>{{msg.payload}}</pre>",
+        "layout": "col-center",
+        "className": "",
+        "x": 1490,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "407c21491eda8157",
+        "type": "ui_text_input",
+        "z": "bebc4b1c88ed43b8",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "9d814080950d3a1e",
+        "order": 6,
+        "width": 6,
+        "height": 26,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 420,
+        "y": 360,
+        "wires": [
+            [
+                "c72e22a05b90eda4"
+            ]
+        ]
+    },
+    {
+        "id": "c72e22a05b90eda4",
+        "type": "file in",
+        "z": "bebc4b1c88ed43b8",
+        "name": "",
+        "filename": "payload",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 560,
+        "y": 360,
+        "wires": [
+            [
+                "4a6f42496603f066"
+            ]
+        ]
+    },
+    {
+        "id": "4a6f42496603f066",
+        "type": "json",
+        "z": "bebc4b1c88ed43b8",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 710,
+        "y": 360,
+        "wires": [
+            [
+                "c920e7e951848884",
+                "440f5b2aff7d7e1d"
+            ]
+        ]
+    },
+    {
+        "id": "c920e7e951848884",
+        "type": "function",
+        "z": "bebc4b1c88ed43b8",
+        "name": "function 6",
+        "func": "let dmxString=\"\";\nlet arr = [];\nconst { payload } = msg \nfor (let index = 0; index < payload.length; index++) {\n    //arr.push({name: payload.Name})\n    dmxString += \"\\n\" + payload[index].name + \" Nr.\" + payload[index].lampeNr + \",\"\n                    + \"\\n\"\n                    + \"uni: \" + payload[index].universum + \",\" + \"\\n\"\n\nfor (let index1 = 0; index1 < payload[index].DMXChannelMode.length; index1++) {\n    dmxString += \"SheetChannel\" + payload[index].DMXChannelMode[index1].dmxSheetChannel + \" -\"\n    + payload[index].DMXChannelMode[index1].channel + \",\" + \"\\n\"\n}\n}\n\n//msg.payload = arr;\nmsg.payload = dmxString;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 360,
+        "wires": [
+            [
+                "99b37c3f9691aee5",
+                "9a0946572e33e7b0",
+                "492b74e1bfd4eb6d",
+                "76d2c593f2339712"
+            ]
+        ]
+    },
+    {
+        "id": "99b37c3f9691aee5",
+        "type": "ui_text",
+        "z": "bebc4b1c88ed43b8",
+        "group": "9d814080950d3a1e",
+        "order": 4,
+        "width": 4,
+        "height": 26,
+        "name": "",
+        "label": "DMX Werte",
+        "format": "<pre>{{msg.payload}}</pre>",
+        "layout": "col-center",
+        "className": "",
+        "x": 1050,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "440f5b2aff7d7e1d",
+        "type": "debug",
+        "z": "bebc4b1c88ed43b8",
+        "name": "debug 16",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "9a0946572e33e7b0",
+        "type": "ui_text",
+        "z": "bebc4b1c88ed43b8",
+        "group": "5e1e04f815790b5f",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "",
+        "format": "<pre>{{msg.payload}}</pre>",
+        "layout": "col-center",
+        "className": "",
+        "x": 1030,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "492b74e1bfd4eb6d",
+        "type": "ui_text",
+        "z": "bebc4b1c88ed43b8",
+        "group": "e51339d339b6c88e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "<pre>{{msg.payload}}</pre>",
+        "layout": "col-center",
+        "className": "",
+        "x": 1030,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "76a923e3e2d20826",
+        "type": "ui_button",
+        "z": "bebc4b1c88ed43b8",
+        "name": "",
+        "group": "9d814080950d3a1e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Reset DMX data",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "null",
+        "payloadType": "str",
+        "topic": "null",
+        "topicType": "str",
+        "x": 820,
+        "y": 320,
+        "wires": [
+            [
+                "99b37c3f9691aee5",
+                "9a0946572e33e7b0",
+                "492b74e1bfd4eb6d"
+            ]
+        ]
+    },
+    {
+        "id": "c6d0f28b66a0d490",
+        "type": "ui_text_input",
+        "z": "6c68a78c20904912",
+        "name": "Insert .txt path for RXOne patch",
+        "label": "",
+        "tooltip": "",
+        "group": "efafaa58c1ff9c9d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 250,
+        "y": 240,
+        "wires": [
+            [
+                "72a9d98f154084fa"
+            ]
+        ]
+    },
+    {
+        "id": "808b69f00b22ae96",
+        "type": "function",
+        "z": "6c68a78c20904912",
+        "name": "function 8",
+        "func": "let arr = msg.payload.map(payload => payload.DMXChannelMode);\n\narr = arr.map(item => item.filter(result => result.dmxSheetChannel === Number.parseInt(flow.get(\"dmxValuePan\"))))\n\narr = arr.flat().map(item => {\n  item.value = flow.get(\"panValue\")\n  return item\n})\n\nmsg.payload = {\n  universe: flow.get(\"universePan\"), \n  \"buckets\": arr\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 320,
+        "wires": [
+            [
+                "e2efc28854af300a",
+                "fda0cb52a0e8726b"
+            ]
+        ]
+    },
+    {
+        "id": "79e9690851ebe292",
+        "type": "json",
+        "z": "6c68a78c20904912",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 910,
+        "y": 320,
+        "wires": [
+            [
+                "808b69f00b22ae96"
+            ]
+        ]
+    },
+    {
+        "id": "72a9d98f154084fa",
+        "type": "file in",
+        "z": "6c68a78c20904912",
+        "name": "",
+        "filename": "C:\\Users\\marvi\\.node-red\\DMXPlaene\\RXONE-1-1.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 620,
+        "y": 320,
+        "wires": [
+            [
+                "79e9690851ebe292"
+            ]
+        ]
+    },
+    {
+        "id": "2e3d90386f1c3776",
+        "type": "inject",
+        "z": "6c68a78c20904912",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "C:\\Users\\Turteltauben\\.node-red\\DMXPlaene\\RXONE-2-1.txt",
+        "payloadType": "str",
+        "x": 330,
+        "y": 320,
+        "wires": [
+            [
+                "72a9d98f154084fa"
+            ]
+        ]
+    },
+    {
+        "id": "5ac78851026ce695",
+        "type": "ui_text_input",
+        "z": "6c68a78c20904912",
+        "name": "",
+        "label": "Set DMX Value for Pan",
+        "tooltip": "",
+        "group": "efafaa58c1ff9c9d",
+        "order": 3,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "dmxValue",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "664053c549b4ad8b"
+            ]
+        ]
+    },
+    {
+        "id": "664053c549b4ad8b",
+        "type": "function",
+        "z": "6c68a78c20904912",
+        "name": "flow.set dmxValuePan",
+        "func": "flow.set(\"dmxValuePan\", msg.payload )",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ed4821d0f218a89b",
+        "type": "ui_text_input",
+        "z": "6c68a78c20904912",
+        "name": "",
+        "label": "Set Universe for Pan",
+        "tooltip": "",
+        "group": "efafaa58c1ff9c9d",
+        "order": 2,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "payload.universe",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 260,
+        "y": 140,
+        "wires": [
+            [
+                "4652a1d8d2b7ec11"
+            ]
+        ]
+    },
+    {
+        "id": "4652a1d8d2b7ec11",
+        "type": "function",
+        "z": "6c68a78c20904912",
+        "name": "flow.set universePan",
+        "func": "flow.set(\"universePan\", msg.payload )",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2b01bf1e1e1e8fcc",
+        "type": "ui_slider",
+        "z": "6c68a78c20904912",
+        "name": "",
+        "label": "panValueSlider",
+        "tooltip": "",
+        "group": "efafaa58c1ff9c9d",
+        "order": 4,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "className": "",
+        "x": 280,
+        "y": 100,
+        "wires": [
+            [
+                "b01f5b9915e11e11",
+                "72a9d98f154084fa"
+            ]
+        ]
+    },
+    {
+        "id": "b01f5b9915e11e11",
+        "type": "function",
+        "z": "6c68a78c20904912",
+        "name": "flow.set universePan",
+        "func": "flow.set(\"panValue\", msg.payload )",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a9eb84ec90d16de6",
+        "type": "Art-Net Out",
+        "z": "6c68a78c20904912",
+        "name": "Uni1",
+        "artnetsender": "2899c39b7d332a13",
+        "ignoreaddress": false,
+        "x": 1530,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "c6f9a8fa7fce0cea",
+        "type": "ui_text_input",
+        "z": "6c68a78c20904912",
+        "name": "",
+        "label": "duration (ms)",
+        "tooltip": "",
+        "group": "fafe6dc64d7186a5",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "payload.duration",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 190,
+        "y": 420,
+        "wires": [
+            [
+                "20a096dae07cdf67"
+            ]
+        ]
+    },
+    {
+        "id": "20a096dae07cdf67",
+        "type": "function",
+        "z": "6c68a78c20904912",
+        "name": "flow.set duration",
+        "func": "flow.set(\"duration\", msg.payload )",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cea3be4097e29bab",
+        "type": "ui_text_input",
+        "z": "6c68a78c20904912",
+        "name": "",
+        "label": "DMX Kanal",
+        "tooltip": "",
+        "group": "fafe6dc64d7186a5",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "payload.dmxKanal",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 190,
+        "y": 460,
+        "wires": [
+            [
+                "10ca70f0a2bac5fd"
+            ]
+        ]
+    },
+    {
+        "id": "10ca70f0a2bac5fd",
+        "type": "function",
+        "z": "6c68a78c20904912",
+        "name": "flow.set dmxKanal",
+        "func": "flow.set(\"dmxKanal\", msg.payload )",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "263e3a07b48f286a",
+        "type": "ui_text_input",
+        "z": "6c68a78c20904912",
+        "name": "",
+        "label": "DMX Wert",
+        "tooltip": "",
+        "group": "fafe6dc64d7186a5",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "payload.dmxWert",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 190,
+        "y": 500,
+        "wires": [
+            [
+                "10bb5638e476616c"
+            ]
+        ]
+    },
+    {
+        "id": "10bb5638e476616c",
+        "type": "function",
+        "z": "6c68a78c20904912",
+        "name": "flow.set dmxWert",
+        "func": "flow.set(\"dmxWert\", msg.payload )",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "176188200e86c1c0",
+        "type": "ui_button",
+        "z": "6c68a78c20904912",
+        "name": "",
+        "group": "fafe6dc64d7186a5",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "submit",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 170,
+        "y": 580,
+        "wires": [
+            [
+                "0580a584d7c05d7f"
+            ]
+        ]
+    },
+    {
+        "id": "0580a584d7c05d7f",
+        "type": "file in",
+        "z": "6c68a78c20904912",
+        "name": "",
+        "filename": "C:\\Users\\marvi\\.node-red\\DMXPlaene\\RXONE-1-1.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 560,
+        "y": 580,
+        "wires": [
+            [
+                "be48cf89ef75d117"
+            ]
+        ]
+    },
+    {
+        "id": "be48cf89ef75d117",
+        "type": "json",
+        "z": "6c68a78c20904912",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 890,
+        "y": 580,
+        "wires": [
+            [
+                "c643568dac0fef01"
+            ]
+        ]
+    },
+    {
+        "id": "c643568dac0fef01",
+        "type": "function",
+        "z": "6c68a78c20904912",
+        "name": "function 9",
+        "func": "let arr = msg.payload.map(payload => payload.DMXChannelMode);\n\narr = arr.map(item => item.filter(result => result.dmxSheetChannel === Number.parseInt(flow.get(\"dmxKanal\"))))\n\narr = arr.flat().map(item => {\n  item.value = flow.get(\"dmxWert\")\n  return item\n})\n\nmsg.payload = {\n    universe: flow.get(\"universePan\"),\n    \"transition\": \"linear\",\n    duration: flow.get(\"duration\"),\n    \"repeat\": 1,\n    \"gap\": 1000,\n  buckets: arr\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 580,
+        "wires": [
+            [
+                "e2efc28854af300a"
+            ]
+        ]
+    },
+    {
+        "id": "3dc85ff1c145e83d",
+        "type": "Art-Net In",
+        "z": "6c68a78c20904912",
+        "name": "",
+        "artnetcontroller": "2f0b5dcab7a2573d",
+        "net": 0,
+        "subnet": 0,
+        "universe": 0,
+        "outformat": "buckets",
+        "sendonchange": true,
+        "x": 100,
+        "y": 40,
+        "wires": [
+            [
+                "d9caf51cd4ac1e4a"
+            ]
+        ]
+    },
+    {
+        "id": "d9caf51cd4ac1e4a",
+        "type": "debug",
+        "z": "6c68a78c20904912",
+        "name": "debug 21",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 280,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "284505c7517ce57b",
+        "type": "Art-Net Out",
+        "z": "6c68a78c20904912",
+        "name": "Uni2",
+        "artnetsender": "2899c39b7d332a13",
+        "ignoreaddress": false,
+        "x": 1530,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "e2efc28854af300a",
+        "type": "switch",
+        "z": "6c68a78c20904912",
+        "name": "",
+        "property": "payload.universe",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1350,
+        "y": 400,
+        "wires": [
+            [
+                "a9eb84ec90d16de6",
+                "95ddaef974c83247"
+            ],
+            [
+                "284505c7517ce57b",
+                "95ddaef974c83247"
+            ]
+        ]
+    },
+    {
+        "id": "95ddaef974c83247",
+        "type": "debug",
+        "z": "6c68a78c20904912",
+        "name": "debug 22",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1540,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "1b9caed8e7180dc4",
+        "type": "comment",
+        "z": "6c68a78c20904912",
+        "name": "https://flows.nodered.org/node/@bannsaenger/node-red-contrib-artnet-controller",
+        "info": "",
+        "x": 1520,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "fda0cb52a0e8726b",
+        "type": "debug",
+        "z": "6c68a78c20904912",
+        "name": "debug 25",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1300,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "776e360feb64e44b",
+        "type": "ui_slider",
+        "z": "b5fe148f37a3abb4",
+        "name": "Pan",
+        "label": "Pan",
+        "tooltip": "",
+        "group": "bf17ca07e1801cce",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "className": "",
+        "x": 510,
+        "y": 140,
+        "wires": [
+            [
+                "307e80ec3b315f2a",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "1c96d1312c372367",
+        "type": "ui_slider",
+        "z": "b5fe148f37a3abb4",
+        "name": "Tilt",
+        "label": "Tilt",
+        "tooltip": "",
+        "group": "bf17ca07e1801cce",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "className": "",
+        "x": 510,
+        "y": 220,
+        "wires": [
+            [
+                "6f2517a23109481a",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "74d3250abec5fa57",
+        "type": "ui_slider",
+        "z": "b5fe148f37a3abb4",
+        "name": "Dimmer",
+        "label": "Dimmer",
+        "tooltip": "",
+        "group": "bf17ca07e1801cce",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "className": "",
+        "x": 500,
+        "y": 300,
+        "wires": [
+            [
+                "f3962c4094e06e1c",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "a149402f7e754b13",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 0 - 2 WHITE",
+        "group": "6917381f83b855ca",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 0 - 2 WHITE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 430,
+        "y": 1120,
+        "wires": [
+            [
+                "412ed0c44eb3a201",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "55ed6bfebbc12e6d",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 61 - 63 UV & WHITE",
+        "group": "6917381f83b855ca",
+        "order": 30,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 61 - 63 UV & WHITE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "61",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 400,
+        "y": 2280,
+        "wires": [
+            [
+                "a6ad4f14daa56dc8",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "70335f3750610313",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 59 - 60 UV",
+        "group": "6917381f83b855ca",
+        "order": 29,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 59 - 60 UV",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "59",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 430,
+        "y": 2240,
+        "wires": [
+            [
+                "8768f72625ccf5eb",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "4587a0b148e08e31",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 57 - 58 CTB & UV",
+        "group": "6917381f83b855ca",
+        "order": 28,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 57 - 58 CTB & UV",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "57",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 410,
+        "y": 2200,
+        "wires": [
+            [
+                "a4441e44e706d6fe",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "4b5599850aa6a589",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 55 - 56 CTB",
+        "group": "6917381f83b855ca",
+        "order": 27,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 55 - 56 CTB",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "55",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 430,
+        "y": 2160,
+        "wires": [
+            [
+                "e3ea867ff896917b",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "15551d77b0f15b0d",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 53 - 54 MEDIUM YELLOW & CTB",
+        "group": "6917381f83b855ca",
+        "order": 26,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 53 - 54 MEDIUM YELLOW & CTB",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "53",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 360,
+        "y": 2120,
+        "wires": [
+            [
+                "671b84e63dd871e6",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "cede5149beb5ffcb",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 51 - 52 MEDIUM YELLOW",
+        "group": "6917381f83b855ca",
+        "order": 25,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 51 - 52 MEDIUM YELLOW",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "51",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 380,
+        "y": 2080,
+        "wires": [
+            [
+                "d4f872a51d25ebff",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "1bfee42931e4cd2c",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 49 - 50 PINK & MEDIUM YELLOW",
+        "group": "6917381f83b855ca",
+        "order": 24,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 49 - 50 PINK & MEDIUM YELLOW",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "49",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 360,
+        "y": 2040,
+        "wires": [
+            [
+                "d451d5513d4c2536",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "04ca16a0e99421fa",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 47 - 48 PINK",
+        "group": "6917381f83b855ca",
+        "order": 23,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 47 - 48 PINK",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "47",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 430,
+        "y": 2000,
+        "wires": [
+            [
+                "3a4bff0c975f3b6b",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "1fa6a634404afdd4",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 45 - 46 PURPLE & PINK",
+        "group": "6917381f83b855ca",
+        "order": 22,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 45 - 46 PURPLE & PINK",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "45",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 390,
+        "y": 1960,
+        "wires": [
+            [
+                "395072aaf6da8021",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "bbd9b3b7525b25df",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 43 - 44 PURPLE",
+        "group": "6917381f83b855ca",
+        "order": 21,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 43 - 44 PURPLE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "43",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 410,
+        "y": 1920,
+        "wires": [
+            [
+                "2e5a3443fcf11015",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "4a6a75ac38c846d9",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 40 - 42 LIGHT GREEN & PURPLE",
+        "group": "6917381f83b855ca",
+        "order": 20,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 40 - 42 LIGHT GREEN & PURPLE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "40",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 360,
+        "y": 1880,
+        "wires": [
+            [
+                "bc15c948032db9fd",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "161b98840a2716ca",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 38 - 39 LIGHT GREEN",
+        "group": "6917381f83b855ca",
+        "order": 19,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 38 - 39 LIGHT GREEN",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "38",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 400,
+        "y": 1840,
+        "wires": [
+            [
+                "7d8656e8d93b8eeb",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "4076d6c0548581f1",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 36 - 37 YELLOW & LIGHT GREEN",
+        "group": "6917381f83b855ca",
+        "order": 18,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 36 - 37 YELLOW & LIGHT GREEN",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "36",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 360,
+        "y": 1800,
+        "wires": [
+            [
+                "06d45e45e5822bd4",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "fef1fdc2338e1986",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 34 - 35 YELLOW",
+        "group": "6917381f83b855ca",
+        "order": 17,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 34 - 35 YELLOW",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "34",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 410,
+        "y": 1760,
+        "wires": [
+            [
+                "be273f40d561da68",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "bfe1084372803f7b",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 32 - 33 LIGHT BLUE & YELLOW",
+        "group": "6917381f83b855ca",
+        "order": 16,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 32 - 33 LIGHT BLUE & YELLOW",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "32",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 360,
+        "y": 1720,
+        "wires": [
+            [
+                "9c948d80ce1e9bf8",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "8c69d2b59975d5ad",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 30 - 31 LIGHT BLUE",
+        "group": "6917381f83b855ca",
+        "order": 15,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 30 - 31 LIGHT BLUE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "30",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 400,
+        "y": 1680,
+        "wires": [
+            [
+                "ffd2be3da07fd8b7",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "330f76d308684b5c",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 28 - 29 MAGENTA & LIGHT BLUE",
+        "group": "6917381f83b855ca",
+        "order": 14,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 28 - 29 MAGENTA & LIGHT BLUE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "28",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 360,
+        "y": 1640,
+        "wires": [
+            [
+                "91e1884e1bdb8b72",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "4682a8488e03a5f8",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 26 - 27 MAGENTA",
+        "group": "6917381f83b855ca",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 26 - 27 MAGENTA",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "26",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 410,
+        "y": 1600,
+        "wires": [
+            [
+                "af928d9b0608f4f9",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "747995cbbfe0e0c2",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 24 - 25 ORANGE & MAGENTA",
+        "group": "6917381f83b855ca",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 24 - 25 ORANGE & MAGENTA",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "24",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 370,
+        "y": 1560,
+        "wires": [
+            [
+                "0964cdb9f283dad0",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "37248602a9461b3a",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 22 - 23 ORANGE",
+        "group": "6917381f83b855ca",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 22 - 23 ORANGE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "22",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 410,
+        "y": 1520,
+        "wires": [
+            [
+                "82da9a4265805347",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "855baf8da05db659",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 19 - 21 LIGHT YELLOW & ORANGE",
+        "group": "6917381f83b855ca",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 19 - 21 LIGHT YELLOW & ORANGE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "19",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 350,
+        "y": 1480,
+        "wires": [
+            [
+                "62c1408efac697f4",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "b911334879d37fe2",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 17 - 18 LIGHT YELLOW",
+        "group": "6917381f83b855ca",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 17 - 18 LIGHT YELLOW",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "17",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 390,
+        "y": 1440,
+        "wires": [
+            [
+                "4b99693d29938086",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "a965ac7ee85d744b",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 15 - 16 GREEN & LIGHT YELLOW",
+        "group": "6917381f83b855ca",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 15 - 16 GREEN & LIGHT YELLOW",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "15",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 360,
+        "y": 1400,
+        "wires": [
+            [
+                "0ba4dac9c1040196",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "a5718d077dc482fd",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 13 - 14 GREEN",
+        "group": "6917381f83b855ca",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 13 - 14 GREEN",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "13",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 420,
+        "y": 1360,
+        "wires": [
+            [
+                "845f1479940ccde5",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "5c5a3e08f6f2c575",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 11 - 12 BLUE & GREEN",
+        "group": "6917381f83b855ca",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 11 - 12 BLUE & GREEN",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "11",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 390,
+        "y": 1320,
+        "wires": [
+            [
+                "9a9ac89fbcbf5863",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "0aa1251446f01665",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 9 - 10 BLUE",
+        "group": "6917381f83b855ca",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 9 - 10 BLUE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "9",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 430,
+        "y": 1280,
+        "wires": [
+            [
+                "50865f0c803e5f21",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "e58c466a1482277a",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 7 - 8 RED & BLUE",
+        "group": "6917381f83b855ca",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 7 - 8 RED & BLUE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "7",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 410,
+        "y": 1240,
+        "wires": [
+            [
+                "866a62ef7f466d6a",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "17fd7da7aeebe7b4",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 5 - 6 RED",
+        "group": "6917381f83b855ca",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 5 - 6 RED",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "5",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 440,
+        "y": 1200,
+        "wires": [
+            [
+                "30597a05fb11eb92",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "33d149a27e65e0e4",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 3 - 4 WHITE & RED",
+        "group": "6917381f83b855ca",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 3 - 4 WHITE & RED",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "3",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 400,
+        "y": 1160,
+        "wires": [
+            [
+                "8323047f1e7f70b7",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "307e80ec3b315f2a",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "1=msg.payload",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 1);",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6f2517a23109481a",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "3=msg.payload",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 3);",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f3962c4094e06e1c",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "8=msg.payload",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 8);",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d17addfffce41f02",
+        "type": "Art-Net Out",
+        "z": "b5fe148f37a3abb4",
+        "name": "Uni1",
+        "artnetsender": "2899c39b7d332a13",
+        "ignoreaddress": false,
+        "x": 2070,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "f8952098d893a9c2",
+        "type": "Art-Net Out",
+        "z": "b5fe148f37a3abb4",
+        "name": "Uni2",
+        "artnetsender": "2899c39b7d332a13",
+        "ignoreaddress": false,
+        "x": 2070,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "b08cfec4beb153b2",
+        "type": "switch",
+        "z": "b5fe148f37a3abb4",
+        "name": "",
+        "property": "payload.universe",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1910,
+        "y": 660,
+        "wires": [
+            [
+                "d17addfffce41f02",
+                "3a8bffc0f3e4702a"
+            ],
+            [
+                "f8952098d893a9c2",
+                "3a8bffc0f3e4702a"
+            ]
+        ]
+    },
+    {
+        "id": "3a8bffc0f3e4702a",
+        "type": "debug",
+        "z": "b5fe148f37a3abb4",
+        "name": "debug 23",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2060,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "412ed0c44eb3a201",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 0 - 2 WHITE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8323047f1e7f70b7",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 3 - 4 WHITE & RED",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "30597a05fb11eb92",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 5 - 6 RED",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "866a62ef7f466d6a",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 7 - 8 RED & BLUE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 1240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "50865f0c803e5f21",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 9 - 10 BLUE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 1280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9a9ac89fbcbf5863",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 11 - 12 BLUE & GREEN",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 1320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "845f1479940ccde5",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 13 - 14 GREEN",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 1360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0ba4dac9c1040196",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 15 - 16 GREEN & LIGHT YELLOW",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 1400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4b99693d29938086",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 17 - 18 LIGHT YELLOW",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 1440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "62c1408efac697f4",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 19 - 21 LIGHT YELLOW & ORANGE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 1480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "82da9a4265805347",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 22 - 23 ORANGE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 1520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0964cdb9f283dad0",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 24 - 25 ORANGE & MAGENTA",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "af928d9b0608f4f9",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 26 - 27 MAGENTA",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 1600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "91e1884e1bdb8b72",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 28 - 29 MAGENTA & LIGHT BLUE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 1640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ffd2be3da07fd8b7",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 30 - 31 LIGHT BLUE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 1680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9c948d80ce1e9bf8",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 32 - 33 LIGHT BLUE & YELLOW",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 1720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be273f40d561da68",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 34 - 35 YELLOW",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 1760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "06d45e45e5822bd4",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 36 - 37 YELLOW & LIGHT GREEN",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 1800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7d8656e8d93b8eeb",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 38 - 39 LIGHT GREEN",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 1840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bc15c948032db9fd",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 40 - 42 LIGHT GREEN & PURPLE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 1880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e5a3443fcf11015",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 43 - 44 PURPLE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 1920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "395072aaf6da8021",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 45 - 46 PURPLE & PINK",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 1960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a4bff0c975f3b6b",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 47 - 48 PINK",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 2000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d451d5513d4c2536",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 49 - 50 PINK & MEDIUM YELLOW",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 2040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d4f872a51d25ebff",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 51 - 52 MEDIUM YELLOW",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 2080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "671b84e63dd871e6",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 53 - 54 MEDIUM YELLOW & CTB",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 2120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3b0b1bf6c8aacb66",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 194 - 255 CLOCK. Rot. S - F",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 2480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "291dc2d6dff16518",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 190 - 193 NO ROTATION",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 2440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3239158347ad9f0c",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 128 - 189 RO. F - S",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 2360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4aeafa6302ccfd50",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 64 - 127 COLOR INDEXING",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 2320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a6ad4f14daa56dc8",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 61 - 63 UV & WHITE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 2280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8768f72625ccf5eb",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 59 - 60 UV",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 2240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a4441e44e706d6fe",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 57 - 58 CTB & UV",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 2200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e3ea867ff896917b",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 55 - 56 CTB",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 5);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 2160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "657c9e0aa1b45abb",
+        "type": "json",
+        "z": "b5fe148f37a3abb4",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1150,
+        "y": 980,
+        "wires": [
+            [
+                "42201726bf928818"
+            ]
+        ]
+    },
+    {
+        "id": "6bbecbb338398a46",
+        "type": "inject",
+        "z": "b5fe148f37a3abb4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "C:\\Users\\Turteltauben\\.node-red\\DMXPlaene\\RXONE-2-1.txt",
+        "payloadType": "str",
+        "x": 510,
+        "y": 980,
+        "wires": [
+            [
+                "df8abf8d5d65cbd3"
+            ]
+        ]
+    },
+    {
+        "id": "42201726bf928818",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "extract univers",
+        "func": "flow.set(\"universe\", msg.payload[0].universum)",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1660,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7c8cef773e47d8b0",
+        "type": "ui_slider",
+        "z": "b5fe148f37a3abb4",
+        "name": " 64 - 127 COLOR INDEXING",
+        "label": " 64 - 127 COLOR INDEXING",
+        "tooltip": "",
+        "group": "6917381f83b855ca",
+        "order": 31,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "64",
+        "max": "127",
+        "step": 1,
+        "className": "",
+        "x": 380,
+        "y": 2320,
+        "wires": [
+            [
+                "4aeafa6302ccfd50",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "370221279a1cf019",
+        "type": "ui_slider",
+        "z": "b5fe148f37a3abb4",
+        "name": " 128 - 189 RO. F - S",
+        "label": " 128 - 189 RO. F - S",
+        "tooltip": "",
+        "group": "6917381f83b855ca",
+        "order": 32,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "128",
+        "max": "189",
+        "step": 1,
+        "className": "",
+        "x": 410,
+        "y": 2360,
+        "wires": [
+            [
+                "3239158347ad9f0c",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "0a2821acc8a786e0",
+        "type": "ui_slider",
+        "z": "b5fe148f37a3abb4",
+        "name": " 194 - 255 CLOCK. Rot. S - F",
+        "label": " 194 - 255 CLOCK. Rot. S - F",
+        "tooltip": "",
+        "group": "6917381f83b855ca",
+        "order": 34,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "194",
+        "max": "255",
+        "step": 1,
+        "className": "",
+        "x": 380,
+        "y": 2480,
+        "wires": [
+            [
+                "3b0b1bf6c8aacb66",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "5dfafa1f5c8d310b",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": "clear",
+        "group": "bf17ca07e1801cce",
+        "order": 8,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "clear",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 510,
+        "y": 940,
+        "wires": [
+            [
+                "c6d46f8f6730e46a",
+                "15020754fe9fd9ad"
+            ]
+        ]
+    },
+    {
+        "id": "6d80995679fd9125",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": "record",
+        "group": "bf17ca07e1801cce",
+        "order": 9,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "record",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1650,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be780f2fb764fb92",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "all chan = 0",
+        "func": "let arr = msg.payload.map(payload => payload.DMXChannelMode);\n\narr = arr.flat().map(item => {\n    item.value = 0\n    return item\n})\n\nmsg.payload = {\n    universe: msg.payload[0].universum,\n    \"buckets\": arr\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1670,
+        "y": 940,
+        "wires": [
+            [
+                "b08cfec4beb153b2"
+            ]
+        ]
+    },
+    {
+        "id": "de1bc672dde35398",
+        "type": "json",
+        "z": "b5fe148f37a3abb4",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1150,
+        "y": 940,
+        "wires": [
+            [
+                "be780f2fb764fb92"
+            ]
+        ]
+    },
+    {
+        "id": "f55fa960a0eb26e2",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "sendValues@Channels",
+        "func": "\nlet arr = msg.payload.map(payload => payload.DMXChannelMode);\n\narr = arr.map(item => item.filter(result => result.dmxSheetChannel === Number.parseInt(flow.get(\"dmxSheetChannel\"))))\n\narr = arr.flat().map(item => {\n  item.value = flow.get(\"valueDMX\")\n  return item\n})\n\nmsg.payload = {\n  universe: flow.get(\"universe\"),\n  \"buckets\": arr\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1630,
+        "y": 1020,
+        "wires": [
+            [
+                "b08cfec4beb153b2"
+            ]
+        ]
+    },
+    {
+        "id": "d9970e4f3a30c2c1",
+        "type": "json",
+        "z": "b5fe148f37a3abb4",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1150,
+        "y": 1020,
+        "wires": [
+            [
+                "f55fa960a0eb26e2"
+            ]
+        ]
+    },
+    {
+        "id": "67a2e9bdb4fa1d25",
+        "type": "file in",
+        "z": "b5fe148f37a3abb4",
+        "name": "",
+        "filename": "C:\\Users\\marvi\\.node-red\\DMXPlaene\\RXONE-1-1.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 820,
+        "y": 1020,
+        "wires": [
+            [
+                "d9970e4f3a30c2c1"
+            ]
+        ]
+    },
+    {
+        "id": "3eacb08396a08f6b",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": "LampOn",
+        "group": "bf17ca07e1801cce",
+        "order": 6,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "LampOn",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "Dies kann mehrere Minuten in Anspruch nehmen.",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "str",
+        "x": 500,
+        "y": 700,
+        "wires": [
+            [
+                "88dbf783087f4b22",
+                "5aeecfe905d7aa35"
+            ]
+        ]
+    },
+    {
+        "id": "f44fc04fa7090ab7",
+        "type": "delay",
+        "z": "b5fe148f37a3abb4",
+        "name": "6s",
+        "pauseType": "delay",
+        "timeout": "6",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1310,
+        "y": 620,
+        "wires": [
+            [
+                "44bff3e774186ccd"
+            ]
+        ]
+    },
+    {
+        "id": "df8abf8d5d65cbd3",
+        "type": "file in",
+        "z": "b5fe148f37a3abb4",
+        "name": "",
+        "filename": "C:\\Users\\marvi\\.node-red\\DMXPlaene\\RXONE-1-1.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 820,
+        "y": 980,
+        "wires": [
+            [
+                "657c9e0aa1b45abb"
+            ]
+        ]
+    },
+    {
+        "id": "c6d46f8f6730e46a",
+        "type": "file in",
+        "z": "b5fe148f37a3abb4",
+        "name": "",
+        "filename": "C:\\Users\\marvi\\.node-red\\DMXPlaene\\RXONE-1-1.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 820,
+        "y": 940,
+        "wires": [
+            [
+                "de1bc672dde35398"
+            ]
+        ]
+    },
+    {
+        "id": "5aeecfe905d7aa35",
+        "type": "file in",
+        "z": "b5fe148f37a3abb4",
+        "name": "",
+        "filename": "C:\\Users\\marvi\\.node-red\\DMXPlaene\\RXONE-1-1.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 820,
+        "y": 700,
+        "wires": [
+            [
+                "95fea8ab1b0dcd3b"
+            ]
+        ]
+    },
+    {
+        "id": "95fea8ab1b0dcd3b",
+        "type": "json",
+        "z": "b5fe148f37a3abb4",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1150,
+        "y": 700,
+        "wires": [
+            [
+                "f44fc04fa7090ab7",
+                "05889ba15b3ad7f5",
+                "e1741f5cbc6edcb3",
+                "a642c8b22bbd2c9c",
+                "b6efccc31db73f42",
+                "fcd2097d3bc1f43f",
+                "0da6540b66b0856e"
+            ]
+        ]
+    },
+    {
+        "id": "f5f19fb77219dd0a",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "17=130 for 5s",
+        "func": "let arr = msg.payload.map(payload => payload.DMXChannelMode);\n\narr = arr.map(item => item.filter(result => result.dmxSheetChannel === 17))\n\narr = arr.flat().map(item => {\n  item.value = 130\n  return item\n})\n\nmsg.payload = {\n  universe: flow.get(\"universe\"),\n  \"transition\": \"\",\n  \"duration\": 5000,\n  \"repeat\": 1,\n  \"gap\": 1000,\n  buckets: arr\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1660,
+        "y": 660,
+        "wires": [
+            [
+                "b08cfec4beb153b2"
+            ]
+        ]
+    },
+    {
+        "id": "44bff3e774186ccd",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "8=255",
+        "func": "let arr = msg.payload.map(payload => payload.DMXChannelMode);\n\narr = arr.map(item => item.filter(result => result.dmxSheetChannel === 8))\n\narr = arr.flat().map(item => {\n  item.value = 255\n  flow.set(\"valueDMX\", item.value)\n  return item\n})\n\nmsg.payload = {\n  universe: flow.get(\"universe\"),\n  \"buckets\": arr\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1690,
+        "y": 620,
+        "wires": [
+            [
+                "b08cfec4beb153b2",
+                "c48215b2ae8de0ae"
+            ]
+        ]
+    },
+    {
+        "id": "05889ba15b3ad7f5",
+        "type": "delay",
+        "z": "b5fe148f37a3abb4",
+        "name": "8s",
+        "pauseType": "delay",
+        "timeout": "8",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1310,
+        "y": 580,
+        "wires": [
+            [
+                "cd8a4dcf3efe2271"
+            ]
+        ]
+    },
+    {
+        "id": "cd8a4dcf3efe2271",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "7=8",
+        "func": "let arr = msg.payload.map(payload => payload.DMXChannelMode);\n\narr = arr.map(item => item.filter(result => result.dmxSheetChannel === 7))\n\narr = arr.flat().map(item => {\n  item.value = 8\n  return item\n})\n\nmsg.payload = {\n  universe: flow.get(\"universe\"),\n  buckets: arr\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1690,
+        "y": 580,
+        "wires": [
+            [
+                "b08cfec4beb153b2",
+                "8341aa76db5eccf4"
+            ]
+        ]
+    },
+    {
+        "id": "c443ff7fbdc75ed0",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "5=0",
+        "func": "let arr = msg.payload.map(payload => payload.DMXChannelMode);\n\narr = arr.map(item => item.filter(result => result.dmxSheetChannel === 5))\n\narr = arr.flat().map(item => {\n  item.value = 0\n  return item\n})\n\nmsg.payload = {\n  universe: flow.get(\"universe\"),\n  buckets: arr\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1690,
+        "y": 540,
+        "wires": [
+            [
+                "b08cfec4beb153b2"
+            ]
+        ]
+    },
+    {
+        "id": "fe7e5bb09a92e7e7",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "3=128",
+        "func": "let arr = msg.payload.map(payload => payload.DMXChannelMode);\n\narr = arr.map(item => item.filter(result => result.dmxSheetChannel === 3))\n\narr = arr.flat().map(item => {\n  item.value = 128\n  flow.set(\"valueDMX\", item.value)\n  return item\n})\n\nmsg.payload = {\n  universe: flow.get(\"universe\"),\n  buckets: arr\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1690,
+        "y": 500,
+        "wires": [
+            [
+                "b08cfec4beb153b2",
+                "c178e02051548d85"
+            ]
+        ]
+    },
+    {
+        "id": "e1741f5cbc6edcb3",
+        "type": "delay",
+        "z": "b5fe148f37a3abb4",
+        "name": "9s",
+        "pauseType": "delay",
+        "timeout": "9",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1310,
+        "y": 540,
+        "wires": [
+            [
+                "c443ff7fbdc75ed0"
+            ]
+        ]
+    },
+    {
+        "id": "a642c8b22bbd2c9c",
+        "type": "delay",
+        "z": "b5fe148f37a3abb4",
+        "name": "10s",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1310,
+        "y": 500,
+        "wires": [
+            [
+                "fe7e5bb09a92e7e7"
+            ]
+        ]
+    },
+    {
+        "id": "7ec7f4a86037ea76",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "1=0",
+        "func": "let arr = msg.payload.map(payload => payload.DMXChannelMode);\n\narr = arr.map(item => item.filter(result => result.dmxSheetChannel === 1))\n\narr = arr.flat().map(item => {\n  item.value = 0\n  flow.set(\"valueDMX\", item.value)\n  return item\n})\n\nmsg.payload = {\n  universe: flow.get(\"universe\"),\n  buckets: arr\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1690,
+        "y": 460,
+        "wires": [
+            [
+                "b08cfec4beb153b2",
+                "b21f1d3b2613c070"
+            ]
+        ]
+    },
+    {
+        "id": "b6efccc31db73f42",
+        "type": "delay",
+        "z": "b5fe148f37a3abb4",
+        "name": "11s",
+        "pauseType": "delay",
+        "timeout": "11",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1310,
+        "y": 460,
+        "wires": [
+            [
+                "7ec7f4a86037ea76"
+            ]
+        ]
+    },
+    {
+        "id": "b21f1d3b2613c070",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "flow.get(\"value\")",
+        "func": "msg.payload = flow.get(\"valueDMX\")\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 140,
+        "wires": [
+            [
+                "776e360feb64e44b"
+            ]
+        ]
+    },
+    {
+        "id": "c178e02051548d85",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "flow.get(\"value\")",
+        "func": "msg.payload = flow.get(\"valueDMX\")\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 220,
+        "wires": [
+            [
+                "1c96d1312c372367"
+            ]
+        ]
+    },
+    {
+        "id": "c48215b2ae8de0ae",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "flow.get(\"value\")",
+        "func": "msg.payload = flow.get(\"valueDMX\")\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 300,
+        "wires": [
+            [
+                "74d3250abec5fa57"
+            ]
+        ]
+    },
+    {
+        "id": "15020754fe9fd9ad",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "value 0",
+        "func": "msg.payload = 0\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 520,
+        "wires": [
+            [
+                "776e360feb64e44b",
+                "1c96d1312c372367",
+                "74d3250abec5fa57",
+                "378c43130e913c1d"
+            ]
+        ]
+    },
+    {
+        "id": "0d302ea9008092a2",
+        "type": "comment",
+        "z": "b5fe148f37a3abb4",
+        "name": "todo",
+        "info": "lamp off",
+        "x": 1790,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "0438dacdddb5c963",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": "LampOff",
+        "group": "bf17ca07e1801cce",
+        "order": 7,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "LampOff",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 500,
+        "y": 900,
+        "wires": [
+            [
+                "c4fc5c5807f8b3b6"
+            ]
+        ]
+    },
+    {
+        "id": "c4fc5c5807f8b3b6",
+        "type": "file in",
+        "z": "b5fe148f37a3abb4",
+        "name": "",
+        "filename": "C:\\Users\\marvi\\.node-red\\DMXPlaene\\RXONE-1-1.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 820,
+        "y": 900,
+        "wires": [
+            [
+                "d2c70d5a8c90f3d8"
+            ]
+        ]
+    },
+    {
+        "id": "d2c70d5a8c90f3d8",
+        "type": "json",
+        "z": "b5fe148f37a3abb4",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1150,
+        "y": 900,
+        "wires": [
+            [
+                "106574e8f0d8e999",
+                "c0796ce3c29b5213",
+                "ae54557c58621961",
+                "539e4b643cc4ea0e",
+                "ef9aaf2994bd6eaa",
+                "cd8a4dcf3efe2271"
+            ]
+        ]
+    },
+    {
+        "id": "bba9ee14c8671056",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "17=230 for 3s",
+        "func": "let arr = msg.payload.map(payload => payload.DMXChannelMode);\n\narr = arr.map(item => item.filter(result => result.dmxSheetChannel === 17))\n\narr = arr.flat().map(item => {\n  item.value = 230\n  return item\n})\n\nmsg.payload = {\n  universe: flow.get(\"universe\"),\n  \"transition\": \"\",\n  \"duration\": 3000,\n  \"repeat\": 1,\n  \"gap\": 1000,\n  \"buckets\": arr\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1660,
+        "y": 900,
+        "wires": [
+            [
+                "b08cfec4beb153b2"
+            ]
+        ]
+    },
+    {
+        "id": "fcd2097d3bc1f43f",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "17=130",
+        "func": "let arr = msg.payload.map(payload => payload.DMXChannelMode);\n\narr = arr.map(item => item.filter(result => result.dmxSheetChannel === 17))\n\narr = arr.flat().map(item => {\n  item.value = 130\n  return item\n})\n\nmsg.payload = arr\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1680,
+        "y": 700,
+        "wires": [
+            [
+                "b08cfec4beb153b2"
+            ]
+        ]
+    },
+    {
+        "id": "0da6540b66b0856e",
+        "type": "delay",
+        "z": "b5fe148f37a3abb4",
+        "name": "500ms",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1310,
+        "y": 660,
+        "wires": [
+            [
+                "f5f19fb77219dd0a"
+            ]
+        ]
+    },
+    {
+        "id": "106574e8f0d8e999",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "17=230",
+        "func": "let arr = msg.payload.map(payload => payload.DMXChannelMode);\n\narr = arr.map(item => item.filter(result => result.dmxSheetChannel === 17))\n\narr = arr.flat().map(item => {\n  item.value = 230\n  return item\n})\n\nmsg.payload = arr\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1680,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c0796ce3c29b5213",
+        "type": "delay",
+        "z": "b5fe148f37a3abb4",
+        "name": "500ms",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1310,
+        "y": 900,
+        "wires": [
+            [
+                "bba9ee14c8671056"
+            ]
+        ]
+    },
+    {
+        "id": "88dbf783087f4b22",
+        "type": "ui_toast",
+        "z": "b5fe148f37a3abb4",
+        "position": "top left",
+        "displayTime": "20",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "test1",
+        "topic": "Lampen werden eingeschaltet",
+        "name": "test3",
+        "x": 670,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "36b149a9a4a5dfbe",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "3=128",
+        "func": "let arr = msg.payload.map(payload => payload.DMXChannelMode);\n\narr = arr.map(item => item.filter(result => result.dmxSheetChannel === 3))\n\narr = arr.flat().map(item => {\n  item.value = 0\n  flow.set(\"valueDMX\", item.value)\n  return item\n})\n\nmsg.payload = {\n  universe: flow.get(\"universe\"),\n  \"buckets\": arr\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1690,
+        "y": 820,
+        "wires": [
+            [
+                "c178e02051548d85",
+                "b08cfec4beb153b2"
+            ]
+        ]
+    },
+    {
+        "id": "ae54557c58621961",
+        "type": "delay",
+        "z": "b5fe148f37a3abb4",
+        "name": "4s",
+        "pauseType": "delay",
+        "timeout": "4",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1310,
+        "y": 820,
+        "wires": [
+            [
+                "36b149a9a4a5dfbe"
+            ]
+        ]
+    },
+    {
+        "id": "f87aa00b9ba3227a",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "1=0",
+        "func": "let arr = msg.payload.map(payload => payload.DMXChannelMode);\n\narr = arr.map(item => item.filter(result => result.dmxSheetChannel === 1))\n\narr = arr.flat().map(item => {\n  item.value = 0\n  flow.set(\"valueDMX\", item.value)\n  return item\n})\n\nmsg.payload = {\n  universe: flow.get(\"universe\"),\n  \"buckets\": arr\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1690,
+        "y": 780,
+        "wires": [
+            [
+                "b21f1d3b2613c070",
+                "b08cfec4beb153b2"
+            ]
+        ]
+    },
+    {
+        "id": "539e4b643cc4ea0e",
+        "type": "delay",
+        "z": "b5fe148f37a3abb4",
+        "name": "4s",
+        "pauseType": "delay",
+        "timeout": "4",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1310,
+        "y": 780,
+        "wires": [
+            [
+                "f87aa00b9ba3227a"
+            ]
+        ]
+    },
+    {
+        "id": "ef9aaf2994bd6eaa",
+        "type": "delay",
+        "z": "b5fe148f37a3abb4",
+        "name": "5s",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1310,
+        "y": 740,
+        "wires": [
+            [
+                "e743dd13792384bf"
+            ]
+        ]
+    },
+    {
+        "id": "e743dd13792384bf",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "8=255",
+        "func": "let arr = msg.payload.map(payload => payload.DMXChannelMode);\n\narr = arr.map(item => item.filter(result => result.dmxSheetChannel === 8))\n\narr = arr.flat().map(item => {\n  item.value = 0\n  flow.set(\"valueDMX\", item.value)\n  return item\n})\n\nmsg.payload = {\n  universe: flow.get(\"universe\"),\n  \"buckets\": arr\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1690,
+        "y": 740,
+        "wires": [
+            [
+                "b08cfec4beb153b2",
+                "c48215b2ae8de0ae"
+            ]
+        ]
+    },
+    {
+        "id": "378c43130e913c1d",
+        "type": "ui_slider",
+        "z": "b5fe148f37a3abb4",
+        "name": "Shutter",
+        "label": "Shutter",
+        "tooltip": "",
+        "group": "bf17ca07e1801cce",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "className": "",
+        "x": 500,
+        "y": 60,
+        "wires": [
+            [
+                "0cfa13c376be443e",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "0cfa13c376be443e",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "1=msg.payload",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 7);",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8341aa76db5eccf4",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "flow.get(\"value\")",
+        "func": "msg.payload = flow.get(\"value\")\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 60,
+        "wires": [
+            [
+                "378c43130e913c1d"
+            ]
+        ]
+    },
+    {
+        "id": "eceb9e7f1cf4c69d",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 0 - 3 OPEN",
+        "group": "7b0aa8352f02ad82",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 0 - 3 OPEN",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 430,
+        "y": 2640,
+        "wires": [
+            [
+                "c2cd4382bdd80663",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "c2cd4382bdd80663",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 0 - 3 OPEN",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 2640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4a879f1932dae3d8",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 4 - 7 GOBO 1",
+        "group": "7b0aa8352f02ad82",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 4 - 7 GOBO 1",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "4",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 420,
+        "y": 2680,
+        "wires": [
+            [
+                "615987a1f73033ac",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "615987a1f73033ac",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 4 - 7 GOBO 1",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 2680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f20ae42b2bf892ec",
+        "type": "comment",
+        "z": "b5fe148f37a3abb4",
+        "name": "GOBO",
+        "info": "",
+        "x": 770,
+        "y": 2620,
+        "wires": []
+    },
+    {
+        "id": "35257c516d0513d1",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 8 - 11 GOBO 2",
+        "group": "7b0aa8352f02ad82",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 8 - 11 GOBO 2",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "8",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 420,
+        "y": 2720,
+        "wires": [
+            [
+                "12020ea33a3c2c56",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "12020ea33a3c2c56",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 8 - 11 GOBO 2",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 2720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "390d3be92163bfdb",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 12 - 15 GOBO 3",
+        "group": "7b0aa8352f02ad82",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 12 - 15 GOBO 3",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "12",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 420,
+        "y": 2760,
+        "wires": [
+            [
+                "be938bc8fc3e3a83",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "be938bc8fc3e3a83",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 12 - 15 GOBO 3",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 2760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5f2dcd2bf3df9f33",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 16 - 19 GOBO 4",
+        "group": "7b0aa8352f02ad82",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 16 - 19 GOBO 4",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "16",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 420,
+        "y": 2800,
+        "wires": [
+            [
+                "8aa018a83087f321",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "8aa018a83087f321",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 16 - 19 GOBO 4",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 2800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a9dc7440958c6838",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 20 - 23 GOBO 5",
+        "group": "7b0aa8352f02ad82",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 20 - 23 GOBO 5",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "20",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 420,
+        "y": 2840,
+        "wires": [
+            [
+                "3e650065bbe33d5a",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "3e650065bbe33d5a",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 20 - 23 GOBO 5",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 2840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1820a7e4ef325262",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 24 - 27 GOBO 6",
+        "group": "7b0aa8352f02ad82",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 24 - 27 GOBO 6",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "24",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 420,
+        "y": 2880,
+        "wires": [
+            [
+                "fe6177b3eb8d371b",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "fe6177b3eb8d371b",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 24 - 27 GOBO 6",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 2880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9eedc0e76be34637",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 28 - 31 GOBO 7",
+        "group": "7b0aa8352f02ad82",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 28 - 31 GOBO 7",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "28",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 420,
+        "y": 2920,
+        "wires": [
+            [
+                "a9f53e72f51d6cd3",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "a9f53e72f51d6cd3",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 28 - 31 GOBO 7",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 2920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fc7ff20a60a455b2",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 32 - 35 GOBO 8",
+        "group": "7b0aa8352f02ad82",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 32 - 35 GOBO 8",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "32",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 420,
+        "y": 2960,
+        "wires": [
+            [
+                "612bb83f9b05c6b7",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "612bb83f9b05c6b7",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 32 - 35 GOBO 8",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 2960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8e0bf194d2e2c0e7",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 36 - 39 GOBO 9",
+        "group": "7b0aa8352f02ad82",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 36 - 39 GOBO 9",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "36",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 420,
+        "y": 3000,
+        "wires": [
+            [
+                "0d8566acec38b17f",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "0d8566acec38b17f",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 36 - 39 GOBO 9",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 3000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b38d30dbbe618ce2",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 40 - 43 GOBO 10",
+        "group": "7b0aa8352f02ad82",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 40 - 43 GOBO 10",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "40",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 410,
+        "y": 3040,
+        "wires": [
+            [
+                "320bd47961a03268",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "320bd47961a03268",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 40 - 43 GOBO 10",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 3040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3fc3b5acb0d905c0",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 44 - 47 GOBO 11",
+        "group": "7b0aa8352f02ad82",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 44 - 47 GOBO 11",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "44",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 410,
+        "y": 3080,
+        "wires": [
+            [
+                "25547da0d5bd060d",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "25547da0d5bd060d",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 44 - 47 GOBO 11",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 3080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8d0f2fb9f129548f",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 48 - 51 GOBO 12",
+        "group": "7b0aa8352f02ad82",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 48 - 51 GOBO 12",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "48",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 410,
+        "y": 3120,
+        "wires": [
+            [
+                "1e790b4cd8e52a20",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "1e790b4cd8e52a20",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 48 - 51 GOBO 12",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 3120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "607a393d58f625e5",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 52 - 55 GOBO 13",
+        "group": "7b0aa8352f02ad82",
+        "order": 14,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 52 - 55 GOBO 13",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "52",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 410,
+        "y": 3160,
+        "wires": [
+            [
+                "23887c85731fa6fc",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "23887c85731fa6fc",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 52 - 55 GOBO 13",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 3160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3465723f47046b6d",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 56 - 59 GOBO 14",
+        "group": "7b0aa8352f02ad82",
+        "order": 15,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 56 - 59 GOBO 14",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "56",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 410,
+        "y": 3200,
+        "wires": [
+            [
+                "fc4299843c756a9d",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "fc4299843c756a9d",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 56 - 59 GOBO 14",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 3200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "19dc9e513a5dc980",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 60 - 63 GOBO 15",
+        "group": "7b0aa8352f02ad82",
+        "order": 16,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 60 - 63 GOBO 15",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "60",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 410,
+        "y": 3240,
+        "wires": [
+            [
+                "894930534d4bb93d",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "894930534d4bb93d",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 60 - 63 GOBO 15",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 3240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "432b65ed285b577c",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 64 - 68 GOBO 1 SHAKE",
+        "group": "7b0aa8352f02ad82",
+        "order": 17,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 64 - 68 GOBO 1 SHAKE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "64",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 390,
+        "y": 3280,
+        "wires": [
+            [
+                "9ceae2814c606dab",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "9ceae2814c606dab",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 64 - 68 GOBO 1 SHAKE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 3280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60e82755d2270b41",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 69 - 72 GOBO 2 SHAKE",
+        "group": "7b0aa8352f02ad82",
+        "order": 18,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 69 - 72 GOBO 2 SHAKE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "69",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 390,
+        "y": 3320,
+        "wires": [
+            [
+                "66a60a32c7703372",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "66a60a32c7703372",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 69 - 72 GOBO 2 SHAKE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 3320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "82e856222e41f083",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 73 - 76 GOBO 3 SHAKE",
+        "group": "7b0aa8352f02ad82",
+        "order": 19,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 73 - 76 GOBO 3 SHAKE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "73",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 390,
+        "y": 3360,
+        "wires": [
+            [
+                "838ea44719669aeb",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "838ea44719669aeb",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 73 - 76 GOBO 3 SHAKE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 3360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ba258c62b0b21dab",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 77 - 80 GOBO 4 SHAKE",
+        "group": "7b0aa8352f02ad82",
+        "order": 20,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 77 - 80 GOBO 4 SHAKE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "77",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 390,
+        "y": 3400,
+        "wires": [
+            [
+                "3108356dfceff40f",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "3108356dfceff40f",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 77 - 80 GOBO 4 SHAKE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 3400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5f00681d80b67c24",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 81 - 84 GOBO 5 SHAKE",
+        "group": "7b0aa8352f02ad82",
+        "order": 21,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 81 - 84 GOBO 5 SHAKE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 390,
+        "y": 3440,
+        "wires": [
+            [
+                "753e10ee5225c193",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "753e10ee5225c193",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 81 - 84 GOBO 5 SHAKE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 3440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ed6eb225fad0e97b",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 85 - 89 GOBO 6 SHAKE",
+        "group": "7b0aa8352f02ad82",
+        "order": 22,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 85 - 89 GOBO 6 SHAKE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "85",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 390,
+        "y": 3480,
+        "wires": [
+            [
+                "6f8c3989df64d5e9",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "6f8c3989df64d5e9",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 85 - 89 GOBO 6 SHAKE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 3480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e4a9526e76cf9635",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 90 - 93 GOBO 7 SHAKE",
+        "group": "7b0aa8352f02ad82",
+        "order": 23,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 90 - 93 GOBO 7 SHAKE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "90",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 390,
+        "y": 3520,
+        "wires": [
+            [
+                "2aa07a8cd6c3fbd0",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "2aa07a8cd6c3fbd0",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 90 - 93 GOBO 7 SHAKE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 3520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6b1c8a7904c373df",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 94 - 97 GOBO 8 SHAKE",
+        "group": "7b0aa8352f02ad82",
+        "order": 24,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 94 - 97 GOBO 8 SHAKE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "94",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 390,
+        "y": 3560,
+        "wires": [
+            [
+                "9416dc0bf5a6bb64",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "9416dc0bf5a6bb64",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 94 - 97 GOBO 8 SHAKE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 3560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ff0790e2b0d17f70",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 98 - 101 GOBO 9 SHAKE",
+        "group": "7b0aa8352f02ad82",
+        "order": 25,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 98 - 101 GOBO 9 SHAKE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "98",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 390,
+        "y": 3600,
+        "wires": [
+            [
+                "dba53f50145813e9",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "dba53f50145813e9",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 98 - 101 GOBO 9 SHAKE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 3600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ffad9690238f16d3",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 102 - 105 GOBO 10 SHAKE",
+        "group": "7b0aa8352f02ad82",
+        "order": 26,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 102 - 105 GOBO 10 SHAKE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "102",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 380,
+        "y": 3640,
+        "wires": [
+            [
+                "c8ba2d925f4c007f",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "c8ba2d925f4c007f",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 102 - 105 GOBO 10 SHAKE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 3640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e6db69de10ba1cae",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 106 - 110 GOBO 11 SHAKE",
+        "group": "7b0aa8352f02ad82",
+        "order": 27,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 106 - 110 GOBO 11 SHAKE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "106",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 380,
+        "y": 3680,
+        "wires": [
+            [
+                "0005eac0b5f82074",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "0005eac0b5f82074",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 106 - 110 GOBO 11 SHAKE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 3680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "269a8f39a7c535f7",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 111 - 114 GOBO 12 SHAKE",
+        "group": "7b0aa8352f02ad82",
+        "order": 28,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 111 - 114 GOBO 12 SHAKE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "111",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 380,
+        "y": 3720,
+        "wires": [
+            [
+                "c65cfdfa31bfa22b",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "c65cfdfa31bfa22b",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 111 - 114 GOBO 12 SHAKE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 3720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6d623f7648278e0c",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 115 - 118 GOBO 13 SHAKE",
+        "group": "7b0aa8352f02ad82",
+        "order": 29,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 115 - 118 GOBO 13 SHAKE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "115",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 380,
+        "y": 3760,
+        "wires": [
+            [
+                "36aae333f7455fae",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "36aae333f7455fae",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 115 - 118 GOBO 13 SHAKE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 3760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "947b0f656ebed00f",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 119 - 122 GOBO 14 SHAKE",
+        "group": "7b0aa8352f02ad82",
+        "order": 30,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 119 - 122 GOBO 14 SHAKE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "119",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 380,
+        "y": 3800,
+        "wires": [
+            [
+                "3526da281c24579c",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "3526da281c24579c",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 119 - 122 GOBO 14 SHAKE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 3800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3ffd87c38aa0e636",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 123 - 127 GOBO 15 SHAKE",
+        "group": "7b0aa8352f02ad82",
+        "order": 31,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 123 - 127 GOBO 15 SHAKE",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "123",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 380,
+        "y": 3840,
+        "wires": [
+            [
+                "72938f9a35eca637",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "72938f9a35eca637",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 123 - 127 GOBO 15 SHAKE",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 3840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ed83e2ca09c206bb",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 128 - 189 COUNTER rot. F- S",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 3880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "04e25f4fbddb5d7b",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 190 - 193 NO ROTATION",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 3960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ebcefad80a83e184",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": " 194 - 255 ROT. S - F",
+        "func": "flow.set(\"valueDMX\", msg.payload);\nflow.set(\"dmxSheetChannel\", 6);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 4000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "411448ead64e65eb",
+        "type": "comment",
+        "z": "b5fe148f37a3abb4",
+        "name": "COLOR",
+        "info": "",
+        "x": 750,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "9bf1f35926578fa9",
+        "type": "ui_slider",
+        "z": "b5fe148f37a3abb4",
+        "name": " 128 - 189 COUNTER rot. F- S",
+        "label": " 128 - 189 COUNTER rot. F- S",
+        "tooltip": "",
+        "group": "7b0aa8352f02ad82",
+        "order": 32,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "128",
+        "max": "189",
+        "step": 1,
+        "className": "",
+        "x": 370,
+        "y": 3880,
+        "wires": [
+            [
+                "ed83e2ca09c206bb",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "2aacb152c77ca55d",
+        "type": "ui_slider",
+        "z": "b5fe148f37a3abb4",
+        "name": " 194 - 255 ROT. S - F",
+        "label": " 194 - 255 ROT. S - F",
+        "tooltip": "",
+        "group": "7b0aa8352f02ad82",
+        "order": 34,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "194",
+        "max": "255",
+        "step": 1,
+        "className": "",
+        "x": 400,
+        "y": 4000,
+        "wires": [
+            [
+                "ebcefad80a83e184",
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "b1bec53f6529e289",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 190 - 193 NO ROTATION",
+        "group": "7b0aa8352f02ad82",
+        "order": 33,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 190 - 193 NO ROTATION",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "190",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 390,
+        "y": 3960,
+        "wires": [
+            [
+                "04e25f4fbddb5d7b",
+                "7a771b4b996d170c",
+                "411bf1eefc82824d",
+                "28ca9332a48d1f5b"
+            ]
+        ]
+    },
+    {
+        "id": "fc69044bf0fe2cb4",
+        "type": "ui_button",
+        "z": "b5fe148f37a3abb4",
+        "name": " 190 - 193 NO ROTATION",
+        "group": "6917381f83b855ca",
+        "order": 33,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": " 190 - 193 NO ROTATION",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "190",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 390,
+        "y": 2440,
+        "wires": [
+            [
+                "291dc2d6dff16518",
+                "4ee457ac3a106e07",
+                "2c85ac3ad0a31f06",
+                "9a3b6cfa38b9b609",
+                "e913122407c1a57a"
+            ]
+        ]
+    },
+    {
+        "id": "7a771b4b996d170c",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "msg.payload = 128",
+        "func": "msg.payload = 128\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 4160,
+        "wires": [
+            [
+                "9bf1f35926578fa9"
+            ]
+        ]
+    },
+    {
+        "id": "411bf1eefc82824d",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "msg.payload = 194",
+        "func": "msg.payload = 194\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 4200,
+        "wires": [
+            [
+                "2aacb152c77ca55d"
+            ]
+        ]
+    },
+    {
+        "id": "28ca9332a48d1f5b",
+        "type": "delay",
+        "z": "b5fe148f37a3abb4",
+        "name": "150ms",
+        "pauseType": "delay",
+        "timeout": "150",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 450,
+        "y": 3920,
+        "wires": [
+            [
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "4ee457ac3a106e07",
+        "type": "delay",
+        "z": "b5fe148f37a3abb4",
+        "name": "150ms",
+        "pauseType": "delay",
+        "timeout": "150",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 450,
+        "y": 2400,
+        "wires": [
+            [
+                "67a2e9bdb4fa1d25"
+            ]
+        ]
+    },
+    {
+        "id": "2c85ac3ad0a31f06",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "msg.payload = 128",
+        "func": "msg.payload = 64\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 2520,
+        "wires": [
+            [
+                "7c8cef773e47d8b0"
+            ]
+        ]
+    },
+    {
+        "id": "9a3b6cfa38b9b609",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "msg.payload = 128",
+        "func": "msg.payload = 128\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 2560,
+        "wires": [
+            [
+                "370221279a1cf019"
+            ]
+        ]
+    },
+    {
+        "id": "e913122407c1a57a",
+        "type": "function",
+        "z": "b5fe148f37a3abb4",
+        "name": "msg.payload = 128",
+        "func": "msg.payload = 194\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 2600,
+        "wires": [
+            [
+                "0a2821acc8a786e0"
+            ]
+        ]
+    }
+]
