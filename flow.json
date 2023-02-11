@@ -39,6 +39,14 @@
         "env": []
     },
     {
+        "id": "6c3c817b166280bc",
+        "type": "tab",
+        "label": "CreateJsonObjectFrom.txtFixture",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "2f0b5dcab7a2573d",
         "type": "Art-Net Controller",
         "name": "",
@@ -7343,5 +7351,180 @@
                 "0a2821acc8a786e0"
             ]
         ]
+    },
+    {
+        "id": "a0e97b3d903c7d69",
+        "type": "file in",
+        "z": "6c3c817b166280bc",
+        "name": "",
+        "filename": "C:\\Users\\marvi\\.node-red\\FixtureTXT's\\RXONE17Chan.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 410,
+        "y": 220,
+        "wires": [
+            [
+                "950f653c8dc724fd",
+                "b1b99003992c87a5",
+                "d6382c4b1a8196d4"
+            ]
+        ]
+    },
+    {
+        "id": "2c540a87c499318d",
+        "type": "inject",
+        "z": "6c3c817b166280bc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 220,
+        "wires": [
+            [
+                "a0e97b3d903c7d69"
+            ]
+        ]
+    },
+    {
+        "id": "950f653c8dc724fd",
+        "type": "function",
+        "z": "6c3c817b166280bc",
+        "name": "replace newline",
+        "func": "msg.payload = msg.payload.replace(/\\n/g, \",\");\n//msg.payload = msg.payload.replace(\"\\\"\", \"\");\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 220,
+        "wires": [
+            [
+                "fb584919d3e40138",
+                "0f2bcab98125adbb",
+                "23b745a74e56e860",
+                "9609ae3f5bf872fb"
+            ]
+        ]
+    },
+    {
+        "id": "fb584919d3e40138",
+        "type": "function",
+        "z": "6c3c817b166280bc",
+        "name": "function 12",
+        "func": "let arr = []\n\nvar str = msg.payload;\nvar indices = [];\nfor (var i = 0; i < str.length; i++) {\n    if (str[i] === \"#\") indices.push(i);\n}\n\n\nfor (let index = 0; index < flow.get(\"count#\"); index++) {\n    let startpoint = msg.payload.indexOf(\"#\", indices[index]);\n    let endpoint = msg.payload.indexOf(\"#\", startpoint + 1);;\n    arr.push(msg.payload.substring(startpoint, endpoint))\n    \n}\nmsg.payload = arr;\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b1b99003992c87a5",
+        "type": "function",
+        "z": "6c3c817b166280bc",
+        "name": "count \"#\"",
+        "func": "let arr = []\n\n\nconst array = msg.payload\nlet str = array.toString()\n\nlet cnt = str.split(\"#\").length - 1\n\nflow.set(\"count#\",cnt)",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0f2bcab98125adbb",
+        "type": "function",
+        "z": "6c3c817b166280bc",
+        "name": "count \",\"",
+        "func": "let arr = []\n\n\nconst array = msg.payload\nlet str = array.toString()\n\nlet cnt = str.split(\",\").length - 1\n\nflow.set(\"count,\",cnt)",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "23b745a74e56e860",
+        "type": "function",
+        "z": "6c3c817b166280bc",
+        "name": "function 14",
+        "func": "let arr = []\n\nvar str = msg.payload.toString();\nvar indices = [];\nfor (var i = 0; i < str.length; i++) {\n    if (str[i] === \",\") indices.push(i);\n}\n\nflow.set(\"cnt,\",indices)",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9609ae3f5bf872fb",
+        "type": "debug",
+        "z": "6c3c817b166280bc",
+        "name": "debug 31",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "d6382c4b1a8196d4",
+        "type": "debug",
+        "z": "6c3c817b166280bc",
+        "name": "debug 32",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 400,
+        "wires": []
     }
 ]
