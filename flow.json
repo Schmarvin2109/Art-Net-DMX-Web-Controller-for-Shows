@@ -1839,7 +1839,7 @@
         "type": "debug",
         "z": "d14afb85a501d2ce",
         "name": "debug 14",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -7364,13 +7364,11 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 410,
-        "y": 220,
+        "x": 470,
+        "y": 80,
         "wires": [
             [
-                "950f653c8dc724fd",
-                "b1b99003992c87a5",
-                "d6382c4b1a8196d4"
+                "950f653c8dc724fd"
             ]
         ]
     },
@@ -7395,8 +7393,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 100,
-        "y": 220,
+        "x": 160,
+        "y": 80,
         "wires": [
             [
                 "a0e97b3d903c7d69"
@@ -7408,96 +7406,83 @@
         "type": "function",
         "z": "6c3c817b166280bc",
         "name": "replace newline",
-        "func": "msg.payload = msg.payload.replace(/\\n/g, \",\");\n//msg.payload = msg.payload.replace(\"\\\"\", \"\");\nreturn msg",
+        "func": "msg.payload = msg.payload.replace(/\\n/g, \",\");\nmsg.payload = msg.payload.replace(/\\s/g, \"\");\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 740,
-        "y": 220,
+        "x": 600,
+        "y": 140,
         "wires": [
             [
-                "fb584919d3e40138",
-                "0f2bcab98125adbb",
-                "23b745a74e56e860",
-                "9609ae3f5bf872fb"
+                "a05d609caaa15044"
             ]
         ]
     },
     {
-        "id": "fb584919d3e40138",
+        "id": "a05d609caaa15044",
         "type": "function",
         "z": "6c3c817b166280bc",
-        "name": "function 12",
-        "func": "let arr = []\n\nvar str = msg.payload;\nvar indices = [];\nfor (var i = 0; i < str.length; i++) {\n    if (str[i] === \"#\") indices.push(i);\n}\n\n\nfor (let index = 0; index < flow.get(\"count#\"); index++) {\n    let startpoint = msg.payload.indexOf(\"#\", indices[index]);\n    let endpoint = msg.payload.indexOf(\"#\", startpoint + 1);;\n    arr.push(msg.payload.substring(startpoint, endpoint))\n    \n}\nmsg.payload = arr;\n\nreturn msg",
+        "name": "function 15",
+        "func": "var indices = [];\nfor (var i = 0; i < msg.payload.length; i++) {\n    if (msg.payload[i] === \",\") indices.push(i);\n}\n\n\n\nlet arr = msg.payload.split(\",\")\n\n\n\nmsg.payload = arr\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 950,
-        "y": 220,
+        "x": 610,
+        "y": 200,
         "wires": [
-            []
+            [
+                "bdfa57c81d01016f"
+            ]
         ]
     },
     {
-        "id": "b1b99003992c87a5",
+        "id": "bdfa57c81d01016f",
         "type": "function",
         "z": "6c3c817b166280bc",
-        "name": "count \"#\"",
-        "func": "let arr = []\n\n\nconst array = msg.payload\nlet str = array.toString()\n\nlet cnt = str.split(\"#\").length - 1\n\nflow.set(\"count#\",cnt)",
+        "name": "function 16",
+        "func": "for (let index = 0; index < msg.payload.length; index++) {\n    if (msg.payload[index] === \"\") { msg.payload.splice(index, 1) }\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 740,
-        "y": 160,
+        "x": 610,
+        "y": 260,
         "wires": [
-            []
+            [
+                "b034c77c1e3a1c7b",
+                "953abb9767803e1d"
+            ]
         ]
     },
     {
-        "id": "0f2bcab98125adbb",
+        "id": "953abb9767803e1d",
         "type": "function",
         "z": "6c3c817b166280bc",
-        "name": "count \",\"",
-        "func": "let arr = []\n\n\nconst array = msg.payload\nlet str = array.toString()\n\nlet cnt = str.split(\",\").length - 1\n\nflow.set(\"count,\",cnt)",
+        "name": "function 17",
+        "func": "let arr = [];\nlet arrInner = []\n\nfor (let index = 0; index < msg.payload.length; index++) {\n    if(msg.payload[index].includes(\"#\")){arr.push({dmxChannel: msg.payload[index]})}\n}\n\nfor (let index2 = 0; index2 < msg.payload.length; index2++) {\n    if (!msg.payload[index2].includes(\"#\")) { arr[index2 -1] = ({ dmxValue: arr[4], value: msg.payload[index2] }) }\n}\n\nmsg.payload = arr;\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 940,
-        "y": 180,
+        "x": 610,
+        "y": 320,
         "wires": [
-            []
+            [
+                "588d44e4c6879918"
+            ]
         ]
     },
     {
-        "id": "23b745a74e56e860",
-        "type": "function",
-        "z": "6c3c817b166280bc",
-        "name": "function 14",
-        "func": "let arr = []\n\nvar str = msg.payload.toString();\nvar indices = [];\nfor (var i = 0; i < str.length; i++) {\n    if (str[i] === \",\") indices.push(i);\n}\n\nflow.set(\"cnt,\",indices)",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 950,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "9609ae3f5bf872fb",
+        "id": "588d44e4c6879918",
         "type": "debug",
         "z": "6c3c817b166280bc",
-        "name": "debug 31",
+        "name": "debug 26",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -7506,25 +7491,24 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 940,
-        "y": 400,
+        "x": 800,
+        "y": 320,
         "wires": []
     },
     {
-        "id": "d6382c4b1a8196d4",
+        "id": "b034c77c1e3a1c7b",
         "type": "debug",
         "z": "6c3c817b166280bc",
-        "name": "debug 32",
+        "name": "debug 27",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
+        "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 760,
-        "y": 400,
+        "x": 800,
+        "y": 240,
         "wires": []
     }
 ]
